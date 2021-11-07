@@ -234,9 +234,9 @@ nav ul.jump-links li a {
     position: relative;
 }
 
-nav ul.jump-links li a:hover {
+/* nav ul.jump-links li a:hover {
     color: var(--almost-black);
-}
+} */
 
 nav ul.jump-links li a:before {
     background: var(--almost-black);
@@ -247,6 +247,7 @@ nav ul.jump-links li a:before {
     top: 50%;
     transform: translateY(-50%);
     transform-origin: left;
+    transition: all 0.25s ease;
     width: 100%;
 }
 
