@@ -219,10 +219,16 @@ nav ul.jump-links {
     flex-direction: column;
 }
 
+nav ul.jump-links li {
+    height: 55px;
+    overflow: hidden;
+}
+
 nav ul.jump-links li a {
     display: block;
     letter-spacing: -8px;
     line-height: calc(54 / 80);
+    padding-right: 7px;
 }
 
 nav ul.my-info {
