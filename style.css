@@ -438,12 +438,12 @@ nav .my-info a:hover:before {
 }
 
 .hero h1:before {
-    animation: heroLineTop 0.25s ease 0.25s;
+    animation: heroLineTop 0.25s ease 0.25s forwards;
     top: calc(50% - 5px);
 }
 
 .hero h1:after {
-    animation: heroLineBottom 0.25s ease 0.25s;
+    animation: heroLineBottom 0.25s ease 0.25s forwards;
     top: calc(50% + 5px);
 }
 
