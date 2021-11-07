@@ -114,7 +114,6 @@ button {
 
 .btn {
     border: none;
-    font-size: calc(12rem / 16);
     font-weight: 600;
 }
 
@@ -157,6 +156,7 @@ header {
     background-size: 80px 40px;
     color: var(--off-white);
     height: 20px;
+    padding-bottom: 1px;
     transition: all 0.25s ease;
     width: 80px;
     z-index: var(--z-index-highest);
@@ -202,7 +202,20 @@ nav .nav-container {
     gap: 22px 0;
     height: 100%;
     justify-content: center;
+    position: relative;
     width: 100%;
+}
+
+nav .nav-container::before,
+nav .nav-container:after {
+    background: var(--almost-black);
+    content: '';
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 420px;
 }
 
 nav ul {
