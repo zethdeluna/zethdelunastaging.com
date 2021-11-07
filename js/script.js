@@ -34,4 +34,8 @@ jQuery(function($) {
         
     })
 
+    /**********Marquees**********/
+
+    $('.hero .marquee span').text('Front-end Developer'.repeat(24));
+
 });

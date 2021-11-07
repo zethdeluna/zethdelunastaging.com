@@ -144,6 +144,7 @@ header {
     right: 0;
     top: 100px;
     width: 100vw;
+    z-index: var(--z-index-highest);
 }
 
 /***Menu Button***/
@@ -367,12 +368,26 @@ nav .my-info a:hover:before {
 /*********************************************************************************/
 
 .marquee {
-    background: var(--dark-grayish-green);
     height: 100%;
     left: 0;
+    overflow: hidden;
     position: absolute;
     top: 0;
     width: 20px;
+}
+
+.marquee:before {
+    background: var(--almost-black);
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 2px;
+}
+
+.marquee span {
+    
 }
 
 /*********************************************************************************/
