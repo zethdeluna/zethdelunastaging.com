@@ -432,7 +432,7 @@ nav .my-info a:hover:before {
     transition: all 0.25s ease;
 }
 
-.hero h1:before,
+/* .hero h1:before,
 .hero h1:after {
     background: var(--off-white);
     content: '';
@@ -453,10 +453,37 @@ nav .my-info a:hover:before {
     animation: heroLineBottom 0.5s ease 1s forwards;
     border-top: 11px solid var(--almost-black);
     top: calc(50% + 25px);
-}
+} */
 
 .hero p {
     margin-top: 20px;
+}
+
+/***Ellipses***/
+
+.hero .ellipse-wrapper {
+    height: max-content;
+    position: relative;
+    width: max-content;
+}
+
+.hero .ellipse {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hero .ellipse:nth-of-type(2) {
+    top: 33%;
+}
+
+.hero .ellipse:nth-of-type(3) {
+    top: 66%;
+}
+
+.hero .ellipse:nth-of-type(4) {
+    top: 100%;
 }
 
 /*********************************************************************************/
