@@ -9,6 +9,8 @@ jQuery(function($) {
         e.stopPropagation();
         e.stopImmediatePropagation();
 
+        $('html').toggleClass('nav-open');
+
         if ($('nav').hasClass('active')) {
             $(this).text('Menu');
 
