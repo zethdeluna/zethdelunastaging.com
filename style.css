@@ -1,0 +1,154 @@
+/*********************************************************************************/
+
+/*FONTS*/
+
+/*********************************************************************************/
+
+@font-face {
+    font-display: swap;
+    font-family: 'Work Sans';
+    font-weight: 300;
+    src: url(fonts/WorkSans-Light.ttf);
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Work Sans';
+    font-weight: 400;
+    src: url(fonts/WorkSans-Regular.ttf);
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Work Sans';
+    font-weight: 500;
+    src: url(fonts/WorkSans-Medium.ttf);
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Work Sans';
+    font-weight: 600;
+    src: url(fonts/WorkSans-SemiBold.ttf);
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Work Sans';
+    font-weight: 700;
+    src: url(fonts/WorkSans-Bold.ttf);
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: url(fonts/WorkSans-BoldItalic.ttf);
+}
+
+/*********************************************************************************/
+
+/*BODY STYLES*/
+
+/*********************************************************************************/
+
+:root {
+    --almost-black: #242424;
+    --dark-grayish-green: #a5b1a1;
+    --off-white: #fffaef;
+    --body-font: 'Work Sans', Helvetica, sans-serif;
+}
+
+body {
+    background: var(--off-white);
+    color: var(--almost-black);
+    font: 1rem var(--body-font);
+    text-transform: uppercase;
+}
+
+h1,
+.heading-1,
+h2,
+.heading-2,
+h3,
+.heading-3,
+h4,
+.heading-4,
+h5,
+.heading-5,
+h6,
+.heading-6 {
+    font-weight: 700;
+    margin: 0;
+}
+
+h1,
+.heading-1 {
+    font-size: calc(80rem / 16);
+}
+
+h2,
+.heading-2 {
+    font-size: calc(50rem / 16);
+}
+
+.btn {
+    font-size: calc(12rem / 16);
+    font-weight: 600;
+}
+
+a {
+    color: var(--almost-black);
+    font-size: calc(12rem / 16);
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+a:hover {
+    color: var(--dark-grayish-green);
+}
+
+/*********************************************************************************/
+
+/*HEADER STYLES*/
+
+/*********************************************************************************/
+
+header {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 100vw;
+}
+
+.menu-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.btn.menu {
+    background: var(--almost-black);
+    border: none;
+    color: var(--off-white);
+    height: 20px;
+    transition: all 0.25s ease;
+    width: 80px;
+}
+
+.btn.menu:hover {
+    color: var(--almost-black);
+}
+
+.btn.menu:before {
+    background-image: linear-gradient(180deg, var(--almost-black) 0, var(--almost-black) 50%, var(--dark-grayish-green) 0, var(--dark-grayish-green));
+    background-size: 80px 40px;
+    content: '';
+    height: 20px;
+    left: 0;
+    position: absolute;
+    transition: all 0.25s ease;
+    width: 20px;
+}
+
+.btn.menu:hover:before {
+    background-position: -100% 100%;
+}
