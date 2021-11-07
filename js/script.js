@@ -4,11 +4,6 @@ jQuery(function($) {
 
     /**********Fade Effects**********/
 
-    // Fade In - Hero Only
-
-    $('.hero.fade-in').fadeTo(1000, 1);
-    $('.hero p').fadeTo(1500, 1);
-
     // Fade In/Out
 
     $(window).on('load', function() {
