@@ -1,6 +1,6 @@
 /**********Document Ready Functions**********/
 
-jQuery(function($) {
+$(document).ready(function() {
 
     /**********Fade In Effect**********/
 
