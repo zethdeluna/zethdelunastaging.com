@@ -53,6 +53,7 @@
     --dark-grayish-green: #a5b1a1;
     --off-white: #fffaef;
     --body-font: 'Work Sans', Helvetica, sans-serif;
+    --container-max-width: 1600px;
 }
 
 body {
@@ -91,6 +92,7 @@ h2,
 .btn {
     font-size: calc(12rem / 16);
     font-weight: 600;
+    cursor: pointer;
 }
 
 a {
