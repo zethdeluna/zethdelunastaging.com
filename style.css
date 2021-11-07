@@ -387,11 +387,17 @@ nav .my-info a:hover:before {
 }
 
 .marquee span {
+    animation: marqueeScroll 10s ease infinite;
     left: 100%;
     position: absolute;
     transform: rotate(90deg);
     transform-origin: top left;
     white-space: nowrap;
+}
+
+@keyframes marqueeScroll {
+    from { transform: rotate(90deg) translateX(0); }
+    to { transform: rotate(90deg) translateX(100%); }
 }
 
 /*********************************************************************************/
