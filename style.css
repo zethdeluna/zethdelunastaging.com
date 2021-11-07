@@ -425,10 +425,6 @@ nav .my-info a:hover:before {
     transition: all 0.25s ease;
 }
 
-.hero h1:hover {
-    color: var(--dark-grayish-green);
-}
-
 .hero h1:before,
 .hero h1:after {
     background: var(--almost-black);
@@ -442,20 +438,33 @@ nav .my-info a:hover:before {
 }
 
 .hero h1:before {
+    animation: heroLineTop 0.25s ease 0.25s;
     top: calc(50% - 5px);
 }
 
 .hero h1:after {
+    animation: heroLineBottom 0.25s ease 0.25s;
     top: calc(50% + 5px);
 }
 
-.hero h1:hover:before {
-    top: 0;
-    transform: translateY(4px);
+@keyframes heroLineTop {
+    from {
+        top: calc(50% - 5px);
+        transform: translateY(-50%);
+    }
+    to {
+        top: 0;
+        transform: translateY(4px);
+    }
 }
 
-.hero h1:hover:after {
-    top: 100%;
-    transform: translateY(-13px);
+@keyframes heroLineBottom {
+    from {
+        top: calc(50% + 5px);
+        transform: translateY(-50%);
+    }
+    to {
+        top: 100%;
+        transform: translateY(-13px);
+    }
 }
-
