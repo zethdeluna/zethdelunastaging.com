@@ -456,7 +456,7 @@ nav .my-info a:hover:before {
     }
     to {
         top: 0;
-        transform: translateY(4px);
+        transform: translateY(-45px);
     }
 }
 
