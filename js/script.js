@@ -2,6 +2,24 @@
 
 jQuery(function($) {
 
+    /**********Fade In Effect**********/
+
+    $.fn.isInViewport = function () {
+        let elementTop = $(this).offset().top;
+        let elementBottom = elementTop + $(this).outerHeight();
+        let viewportTop = $(window).scrollTop();
+        let viewportBottom = viewportTop + $(window).height();
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+
+    $(window).on("load resize scroll", function () {
+        $('.fade-inn').each(function() {
+            if( $(this).isInViewport() ) {
+                $(this).css('opacity', 1);
+            }
+        });
+    });
+
     /**********Menu Button**********/
 
     $('#menu-btn').on('click', function(e) {
