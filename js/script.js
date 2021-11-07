@@ -7,7 +7,7 @@ jQuery(function($) {
     $(window).on('load', function() {
         $(window).scroll(function() {
           var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-          $('.fade-in').each(function() {
+          $('.fade').each(function() {
             /* Check the location of each desired element */
             var objectBottom = $(this).offset().top + $(this).outerHeight();
             
