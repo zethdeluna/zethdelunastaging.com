@@ -9,13 +9,15 @@ jQuery(function($) {
         e.stopPropagation();
         e.stopImmediatePropagation();
 
-        $('nav').toggleClass('active');
-
         if ($('nav').hasClass('active')) {
+            $('nav').removeClass('active');
             $(this).text('Close');
         } else {
+            $('nav').addClass('active');
             $(this).text('Menu');
         }
+
+        
     })
 
 });
