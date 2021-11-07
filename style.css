@@ -462,9 +462,12 @@ nav .my-info a:hover:before {
 /***Ellipses***/
 
 .hero .ellipse-wrapper {
-    height: max-content;
-    position: relative;
-    width: max-content;
+    bottom: 40px;
+    height: 80px;
+    left: 50%;
+    position: absolute;
+    transform: translate3d(-50%, 0, 0);
+    width: 100px;
 }
 
 .hero .ellipse {
@@ -475,15 +478,19 @@ nav .my-info a:hover:before {
 }
 
 .hero .ellipse:nth-of-type(2) {
-    top: 33%;
+    top: 20px;
 }
 
 .hero .ellipse:nth-of-type(3) {
-    top: 66%;
+    top: 40px;
 }
 
 .hero .ellipse:nth-of-type(4) {
-    top: 100%;
+    top: 80px;
+}
+
+.hero .ellipse svg {
+    width: 100%;
 }
 
 /*********************************************************************************/
