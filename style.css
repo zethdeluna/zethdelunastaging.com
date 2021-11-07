@@ -76,6 +76,7 @@ body {
 .container {
     max-width: var(--container-max-width);
     padding: 0 0 0 var(--container-padding-left);
+    position: relative;
     width: var(--container-width);
 }
 
@@ -361,6 +362,21 @@ nav .my-info a:hover:before {
 
 /*********************************************************************************/
 
+/*MARQUEE STYLES*/
+
+/*********************************************************************************/
+
+.marquee {
+    background: var(--dark-grayish-green);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+}
+
+/*********************************************************************************/
+
 /*FRONT PAGE STYLES*/
 
 /*********************************************************************************/
@@ -380,3 +396,4 @@ nav .my-info a:hover:before {
 .hero h1 {
     
 }
+
