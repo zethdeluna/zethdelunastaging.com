@@ -37,7 +37,7 @@ jQuery(function($) {
 
             setTimeout(function() {
                 $('nav').removeClass('active');
-            }, 500);
+            }, 750);
 
             $('.nav-container').removeClass('active');
 
@@ -49,7 +49,7 @@ jQuery(function($) {
 
             setTimeout(function() {
                 $('.nav-container').addClass('active');
-            }, 250);
+            }, 500);
         }
 
         
