@@ -38,6 +38,6 @@ jQuery(function($) {
 
     const $whitespaces = ' '.repeat(4);
 
-    $('.hero .marquee span').text('Front-end Developer'+$whitespaces.repeat(24));
+    $('.hero .marquee span').html('Front-end Developer'+$whitespaces.repeat(24));
 
 });
