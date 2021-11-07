@@ -36,9 +36,18 @@ jQuery(function($) {
 
     /**********Marquees**********/
 
-    const $whitespaces = '&nbsp;'.repeat(4);
+    function build_marquee($section, $text) {
+        /** $section should be selector as string
+            $text should be a marquee text as string
+        */
 
-    const $heroMarquee = 'Front-end Developer'+$whitespaces;
-    $('.hero .marquee span').html($heroMarquee.repeat(24));
+        const $whitespaces = '&nbsp;'.repeat(4);
+        $text = $text+$whitespaces;
+        let $marquee = $section+' .marquee span';
+
+        $($marquee).html($text.repeat(24));
+    }
+
+    build_marquee('.hero', 'Front-end Developer');
 
 });
