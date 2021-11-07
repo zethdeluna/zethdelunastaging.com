@@ -222,6 +222,8 @@ nav ul.jump-links {
 nav ul.jump-links li {
     height: 55px;
     overflow: hidden;
+    position: relative;
+    width: 100%;
 }
 
 nav ul.jump-links li a {
@@ -229,6 +231,27 @@ nav ul.jump-links li a {
     letter-spacing: -8px;
     line-height: calc(54 / 80);
     padding-right: 7px;
+    position: relative;
+}
+
+nav ul.jump-links li a:hover {
+    color: var(--almost-black);
+}
+
+nav ul.jump-links li a:before {
+    background: var(--almost-black);
+    content: '';
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left;
+    width: 100%;
+}
+
+nav ul.jump-links li a:hover:before {
+    transform: scaleX(0) translateY(-50%);
 }
 
 nav ul.my-info {
