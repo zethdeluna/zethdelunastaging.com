@@ -62,7 +62,7 @@
     /*Nav transition delays*/
     --transition-time: 0.25s;
     --first-delay: 0.1s;
-    --second-delay: calc(var(--first-delay) + (2 * var(--transition-time)));
+    --second-delay: calc(var(--first-delay) + var(--transition-time));
 }
 
 body {
@@ -221,26 +221,33 @@ nav .nav-container {
 
 nav .nav-container:before,
 nav .nav-container:after {
-    background: var(--almost-black);
+    background: var(--off-white);
     content: '';
-    height: 4px;
+    height: 50%;
     left: 50%;
     position: absolute;
-    top: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translateX(-50%);
     transition: all 0.5s ease;
-    transition-delay: var(--first-delay);
+    transition-delay: var(--second-delay);
     width: 420px;
 }
 
+nav .nav-container:before {
+    border-bottom: 4px solid var(--almost-black);
+    top: 0;
+}
+
 nav.active .nav-container:before {
-    top: 116px;
-    transform: translate3d(-50%, 0, 0);
+    top: calc(-50% + 116px);
+}
+
+nav .nav-container:after {
+    border-top: 4px solid var(--almost-black);
+    bottom: 0;
 }
 
 nav.active .nav-container:after {
-    top: calc(100% - 116px);
-    transform: translate3d(-50%, 0, 0);
+    bottom: calc(-50% + 116px);
 }
 
 nav ul {
