@@ -432,7 +432,7 @@ nav .my-info a:hover:before {
     transition: all 0.25s ease;
 }
 
-/* .hero h1:before,
+.hero h1:before,
 .hero h1:after {
     background: var(--off-white);
     content: '';
@@ -453,45 +453,10 @@ nav .my-info a:hover:before {
     animation: heroLineBottom 0.5s ease 1s forwards;
     border-top: 11px solid var(--almost-black);
     top: calc(50% + 25px);
-} */
+}
 
 .hero p {
     margin-top: 20px;
-}
-
-/***Ellipses***/
-
-.hero .ellipse-wrapper {
-    bottom: 40px;
-    height: 60px;
-    left: 50%;
-    position: absolute;
-    transform: translate3d(-50%, 0, 0);
-    width: 100px;
-}
-
-.hero .ellipse {
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-.hero .ellipse:nth-of-type(2) {
-    top: 20px;
-}
-
-.hero .ellipse:nth-of-type(3) {
-    top: 40px;
-}
-
-.hero .ellipse:nth-of-type(4) {
-    top: 60px;
-}
-
-.hero .ellipse svg {
-    height: auto;
-    width: 100%;
 }
 
 /*********************************************************************************/
