@@ -12,7 +12,7 @@ jQuery(function($) {
         return elementBottom > viewportTop && elementTop < viewportBottom;
     };
 
-    $(window).on("load ready resize scroll", function () {
+    $(window).on("scroll", function () {
         $('.fade-in').each(function() {
             if( $(this).isInViewport() ) {
                 $(this).fadeIn(1000).removeClass('hidden');
