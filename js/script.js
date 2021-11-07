@@ -1,6 +1,6 @@
 /**********Document Ready Functions**********/
 
-$(document).ready(function() {
+jQuery(function($) {
 
     /**********Fade In Effect**********/
 
@@ -12,7 +12,7 @@ $(document).ready(function() {
         return elementBottom > viewportTop && elementTop < viewportBottom;
     };
 
-    $(window).on("load resize scroll", function () {
+    $(window).on("load ready resize scroll", function () {
         $('.fade-in').each(function() {
             if( $(this).isInViewport() ) {
                 $(this).fadeIn(1000).removeClass('hidden');
