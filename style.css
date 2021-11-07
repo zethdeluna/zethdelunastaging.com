@@ -53,7 +53,10 @@
     --dark-grayish-green: #a5b1a1;
     --off-white: #fffaef;
     --body-font: 'Work Sans', Helvetica, sans-serif;
+    --container-width: calc(100vw - 50px);
     --container-max-width: 1600px;
+    --container-margin: calc((100vw - var(--container-width)) / 2);
+    --container-padding-left: 50px;
     --z-index-highest: 8;
     --z-index-mid: 7;
 }
@@ -63,6 +66,13 @@ body {
     color: var(--almost-black);
     font: 1rem var(--body-font);
     text-transform: uppercase;
+}
+
+.container {
+    margin: 0 var(--container-margin);
+    max-width: var(--container-max-width);
+    padding: 0 0 0 var(--container-padding-left);
+    width: var(--container-width);
 }
 
 h1,
@@ -77,7 +87,7 @@ h5,
 .heading-5,
 h6,
 .heading-6 {
-    font-weight: 700;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -112,6 +122,7 @@ a {
     color: var(--almost-black);
     font-size: calc(12rem / 16);
     font-weight: 600;
+    text-decoration: none;
     transition: all 0.25s ease;
 }
 
@@ -130,7 +141,6 @@ header {
     right: 0;
     top: 100px;
     width: 100vw;
-    z-index: 8;
 }
 
 /***Menu Button***/
@@ -150,6 +160,7 @@ header {
     height: 20px;
     transition: all 0.25s ease;
     width: 80px;
+    z-index: var(--z-index-highest);
 }
 
 .btn.menu:hover {
@@ -164,8 +175,10 @@ header {
     height: 20px;
     left: 0;
     position: absolute;
+    top: 0;
     transition: all 0.25s ease;
     width: 20px;
+    z-index: var(--z-index-highest);
 }
 
 .btn.menu:hover:before {
@@ -176,7 +189,37 @@ header {
 
 nav {
     height: 100vh;
+    left: 0;
     position: fixed;
+    top: 0;
     width: 100vw;
-    z-index: 7;
+    z-index: var(--z-index-mid);
+}
+
+nav .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: max-content;
+}
+
+nav ul.jump-links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul.jump-links li a {
+    letter-spacing: -8px;
+}
+
+nav ul.my-info {
+    display: flex;
+    gap: 0 54px;
 }
