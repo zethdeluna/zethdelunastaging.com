@@ -38,6 +38,7 @@ jQuery(function($) {
 
     const $whitespaces = '&nbsp;'.repeat(4);
 
-    $('.hero .marquee span').html('Front-end Developer'+$whitespaces.repeat(24));
+    const $heroMarquee = 'Front-end Developer'+$whitespaces;
+    $('.hero .marquee span').html($heroMarquee.repeat(24));
 
 });
