@@ -62,7 +62,7 @@
     /*Nav transition delays*/
     --transition-time: 0.25s;
     --first-delay: 0.1s;
-    --second-delay: calc(var(--first-delay) + var(--transition-time));
+    --second-delay: calc(var(--first-delay) + (2 * var(--transition-time)));
 }
 
 body {
@@ -229,7 +229,7 @@ nav .nav-container:after {
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
     transition: all 0.5s ease;
-    transition-delay: var(--second-delay);
+    transition-delay: var(--first-delay);
     width: 420px;
 }
 
