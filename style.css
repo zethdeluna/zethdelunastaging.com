@@ -59,6 +59,10 @@
     --container-padding-left: 50px;
     --z-index-highest: 8;
     --z-index-mid: 7;
+    /*Nav transition delays*/
+    --transition-time: 0.25s;
+    --first-delay: 0.1s;
+    --second-delay: calc(var(--first-delay) + var(--transition-time));
 }
 
 body {
@@ -187,12 +191,21 @@ header {
 /***Nav***/
 
 nav {
+    display: none;
     height: 100vh;
     left: 0;
+    opacity: 0;
     position: fixed;
     top: 0;
+    transition: all 0.25s ease;
+    transition-delay: var(--first-delay);
     width: 100vw;
     z-index: var(--z-index-mid);
+}
+
+nav.active {
+    display: block;
+    opacity: 1;
 }
 
 nav .nav-container {
@@ -206,7 +219,7 @@ nav .nav-container {
     width: 100%;
 }
 
-nav .nav-container::before,
+nav .nav-container:before,
 nav .nav-container:after {
     background: var(--almost-black);
     content: '';
@@ -215,7 +228,20 @@ nav .nav-container:after {
     position: absolute;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
+    transition: all 0.25s ease;
+    transition-delay: var(--second-delay);
     width: 420px;
+}
+
+nav.active .nav-container:before {
+    top: 116px;
+    transform: translate3d(-50%, 0, 0);
+}
+
+nav.active .nav-container:after {
+    bottom: 116px;
+    top: auto;
+    transform: translate3d(-50%, 0, 0);
 }
 
 nav ul {
