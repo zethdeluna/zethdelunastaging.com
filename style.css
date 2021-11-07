@@ -421,35 +421,37 @@ nav .my-info a:hover:before {
 
 .hero h1 {
     letter-spacing: -4px;
+    padding-right: 8px;
     position: relative;
     transition: all 0.25s ease;
 }
 
 .hero h1:before,
 .hero h1:after {
-    background: var(--almost-black);
+    background: var(--off-white);
     content: '';
-    height: 11px;
+    height: 50px;
     left: 0;
     position: absolute;
     transform: translateY(-50%);
-    transition: all 0.25s ease;
     width: 100%;
 }
 
 .hero h1:before {
     animation: heroLineTop 0.5s ease 0.5s forwards;
-    top: calc(50% - 5px);
+    border-bottom: 11px solid var(--almost-black);
+    top: calc(50% - 25px);
 }
 
 .hero h1:after {
     animation: heroLineBottom 0.5s ease 0.5s forwards;
-    top: calc(50% + 5px);
+    border-top: 11px solid var(--almost-black);
+    top: calc(50% + 25px);
 }
 
 @keyframes heroLineTop {
     from {
-        top: calc(50% - 5px);
+        top: calc(50% - 25px);
         transform: translateY(-50%);
     }
     to {
@@ -460,7 +462,7 @@ nav .my-info a:hover:before {
 
 @keyframes heroLineBottom {
     from {
-        top: calc(50% + 5px);
+        top: calc(50% + 25px);
         transform: translateY(-50%);
     }
     to {
