@@ -309,5 +309,5 @@ nav .my-info a:before {
 }
 
 nav .my-info a:hover:before {
-    transform: scale(0) translateY(-50%);
+    transform: scaleX(0) translateY(-50%);
 }
