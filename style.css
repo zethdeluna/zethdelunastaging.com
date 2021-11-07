@@ -388,7 +388,12 @@ nav .my-info a:hover:before {
 }
 
 .marquee span {
-
+    left: 100%;
+    position: absolute;
+    top: 0;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    white-space: nowrap;
 }
 
 /*********************************************************************************/
