@@ -9,9 +9,9 @@ jQuery(function($) {
         e.stopPropagation();
         e.stopImmediatePropagation();
 
-        $(this).toggleClass('active');
+        $('nav').toggleClass('active');
 
-        if ($(this).hasClass('active')) {
+        if ($('nav').hasClass('active')) {
             $(this).text('Close');
         } else {
             $(this).text('Menu');
