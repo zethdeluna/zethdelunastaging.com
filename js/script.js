@@ -48,7 +48,8 @@ jQuery(function($) {
         $($marquee).html($text.repeat(24));
 
         let $height = $($marquee).width();
-        $($marquee).css('top', (-1 * $height));
+        let $startPosition = $(window).height() - $height;
+        $($marquee).css('top', $startPosition);
     }
 
     build_marquee('.hero', 'Front-end Developer');
