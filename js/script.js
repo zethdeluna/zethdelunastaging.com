@@ -46,6 +46,9 @@ jQuery(function($) {
         let $marquee = $section+' .marquee span';
 
         $($marquee).html($text.repeat(24));
+
+        let $height = $($marquee).width();
+        $($marquee).css('top', (-1 * $height));
     }
 
     build_marquee('.hero', 'Front-end Developer');

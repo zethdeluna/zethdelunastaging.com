@@ -380,17 +380,15 @@ nav .my-info a:hover:before {
     background: var(--almost-black);
     content: '';
     height: 100%;
-    left: 50%;
+    left: 7px;
     position: absolute;
     top: 0;
-    transform: translateX(-50%);
     width: 2px;
 }
 
 .marquee span {
     left: 100%;
     position: absolute;
-    top: 0;
     transform: rotate(90deg);
     transform-origin: top left;
     white-space: nowrap;
