@@ -213,20 +213,21 @@ nav ul {
     width: max-content;
 }
 
-nav ul.jump-links {
+nav .jump-links {
     align-items: center;
     display: flex;
     flex-direction: column;
+    width: 420px;
 }
 
-nav ul.jump-links li {
+nav .jump-links li {
     height: 55px;
     overflow: hidden;
     position: relative;
     width: 100%;
 }
 
-nav ul.jump-links li a {
+nav .jump-links a {
     display: block;
     letter-spacing: -8px;
     line-height: calc(54 / 80);
@@ -234,11 +235,7 @@ nav ul.jump-links li a {
     position: relative;
 }
 
-/* nav ul.jump-links li a:hover {
-    color: var(--almost-black);
-} */
-
-nav ul.jump-links li a:before {
+nav .jump-links a:before {
     background: var(--almost-black);
     content: '';
     height: 24px;
@@ -251,11 +248,66 @@ nav ul.jump-links li a:before {
     width: 100%;
 }
 
-nav ul.jump-links li a:hover:before {
+nav .jump-links a:hover:before {
     transform: scaleX(0) translateY(-50%);
 }
 
-nav ul.my-info {
+nav .my-info {
     display: flex;
-    gap: 0 54px;
+    justify-content: space-between;
+    position: relative;
+    width: 420px;
+}
+
+nav .my-info:before {
+    background: var(--almost-black);
+    content: '';
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: -1;
+}
+
+nav .my-info li {
+    height: 11px;
+    overflow: hidden;
+}
+
+nav .my-info a {
+    background: var(--off-white);
+    display: block;
+    line-height: calc(14 / 16);
+    position: relative;
+}
+
+nav .my-info a:nth-of-type(1) {
+    padding-right: 4px;
+}
+
+nav .my-info a:nth-of-type(2) {
+    padding: 0 4px;
+}
+
+nav .my-info a:nth-of-type(3) {
+    padding-left: 4px;
+}
+
+nav .my-info a:before {
+    background: var(--almost-black);
+    content: '';
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: scaleX(1) translateY(-50%);
+    transform-origin: left;
+    transition: all 0.25s ease;
+    width: 100%;
+}
+
+nav .my-info a:hover:before {
+    transform: scale(0) translateY(-50%);
 }
