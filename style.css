@@ -433,22 +433,29 @@ nav .my-info a:hover:before {
 .hero h1:after {
     background: var(--almost-black);
     content: '';
-    height: 20px;
+    height: 11px;
     left: 0;
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
     transition: all 0.25s ease;
     width: 100%;
 }
 
+.hero h1:before {
+    top: calc(50% - 5px);
+}
+
+.hero h1:after {
+    top: calc(50% + 5px);
+}
+
 .hero h1:hover:before {
     top: 0;
-    transform: translateY(-4px);
+    transform: translateY(4px);
 }
 
 .hero h1:hover:after {
     top: 100%;
-    transform: translateY(4px);
+    transform: translateY(-13px);
 }
 
