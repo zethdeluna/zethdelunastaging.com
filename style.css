@@ -120,7 +120,6 @@ button {
 
 a {
     color: var(--almost-black);
-    font-size: calc(12rem / 16);
     font-weight: 600;
     text-decoration: none;
     transition: all 0.25s ease;
@@ -272,14 +271,15 @@ nav .my-info:before {
 }
 
 nav .my-info li {
-    height: 11px;
+    height: 22px;
     overflow: hidden;
 }
 
 nav .my-info a {
     background: var(--off-white);
     display: block;
-    line-height: calc(14 / 16);
+    line-height: calc(12 / 16);
+    padding: 5px 0;
     position: relative;
 }
 
@@ -288,7 +288,7 @@ nav .my-info li:nth-of-type(1) a {
 }
 
 nav .my-info li:nth-of-type(2) a {
-    padding: 0 4px;
+    padding: 5px 4px;
 }
 
 nav .my-info li:nth-of-type(3) a {
