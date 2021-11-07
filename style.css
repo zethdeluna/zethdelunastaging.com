@@ -369,7 +369,7 @@ nav .my-info a:hover:before {
 
 .marquee {
     height: 100%;
-    left: 0;
+    left: 40px;
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -378,6 +378,7 @@ nav .my-info a:hover:before {
 
 .marquee:before {
     background: var(--almost-black);
+    content: '';
     height: 100%;
     left: 50%;
     position: absolute;
@@ -387,7 +388,7 @@ nav .my-info a:hover:before {
 }
 
 .marquee span {
-    
+
 }
 
 /*********************************************************************************/
