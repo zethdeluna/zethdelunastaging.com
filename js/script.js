@@ -11,10 +11,10 @@ jQuery(function($) {
 
         if ($('nav').hasClass('active')) {
             $('nav').removeClass('active');
-            $(this).text('Close');
+            $(this).text('Menu');
         } else {
             $('nav').addClass('active');
-            $(this).text('Menu');
+            $(this).text('Close');
         }
 
         
