@@ -53,10 +53,10 @@
     --dark-grayish-green: #a5b1a1;
     --off-white: #fffaef;
     --body-font: 'Work Sans', Helvetica, sans-serif;
-    --container-width: calc(100vw - 50px);
+    --container-width: calc(100vw - 70px);
     --container-max-width: 1600px;
     --container-margin: calc((100vw - var(--container-width)) / 2);
-    --container-padding-left: 50px;
+    --container-padding-left: 70px;
     --z-index-highest: 8;
     --z-index-mid: 7;
 }
@@ -69,11 +69,11 @@ body {
     background: var(--off-white);
     color: var(--almost-black);
     font: 1rem var(--body-font);
+    margin: 0;
     text-transform: uppercase;
 }
 
 .container {
-    margin: 0 var(--container-margin);
     max-width: var(--container-max-width);
     padding: 0 0 0 var(--container-padding-left);
     width: var(--container-width);
@@ -372,5 +372,10 @@ nav .my-info a:hover:before {
 .hero .container {
     align-items: center;
     display: flex;
+    height: 100%;
     justify-content: center;
+}
+
+.hero h1 {
+    
 }
