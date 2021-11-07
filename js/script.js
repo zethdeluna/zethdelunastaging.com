@@ -14,7 +14,7 @@ jQuery(function($) {
 
             setTimeout(function() {
                 $('nav').removeClass('active');
-            }, 250);
+            }, 500);
 
             $('.nav-container').removeClass('active');
 
