@@ -191,6 +191,7 @@ header {
 /***Nav***/
 
 nav {
+    background: var(--off-white);
     height: 100vh;
     left: 0;
     opacity: 0;
