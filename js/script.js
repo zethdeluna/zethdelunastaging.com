@@ -36,7 +36,7 @@ jQuery(function($) {
 
     /**********Marquees**********/
 
-    const $whitespaces = ' '.repeat(4);
+    const $whitespaces = '&nbsp;'.repeat(4);
 
     $('.hero .marquee span').html('Front-end Developer'+$whitespaces.repeat(24));
 
