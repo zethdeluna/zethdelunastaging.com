@@ -10,11 +10,23 @@ jQuery(function($) {
         e.stopImmediatePropagation();
 
         if ($('nav').hasClass('active')) {
-            $('nav').removeClass('active');
             $(this).text('Menu');
+
+            setTimeout(function() {
+                $('nav').removeClass('active');
+            }, 250);
+
+            $('.nav-container').removeClass('active');
+
+
         } else {
-            $('nav').addClass('active');
             $(this).text('Close');
+
+            $('nav').addClass('active');
+
+            setTimeout(function() {
+                $('.nav-container').addClass('active');
+            }, 250);
         }
 
         
