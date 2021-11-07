@@ -45,7 +45,7 @@ jQuery(function($) {
         $text = $text+$whitespaces;
         let $marquee = $section+' .marquee span';
 
-        $($marquee).html($text.repeat(24));
+        $($marquee).html($text.repeat(50));
 
         let $height = $($marquee).width();
         let $startPosition = $(window).height() - $height;

@@ -397,7 +397,7 @@ nav .my-info a:hover:before {
 
 @keyframes marqueeScroll {
     from { transform: rotate(90deg) translateX(0); }
-    to { transform: rotate(90deg) translateX(100%); }
+    to { transform: rotate(90deg) translateX(calc(100% - 100vh)); }
 }
 
 /*********************************************************************************/
