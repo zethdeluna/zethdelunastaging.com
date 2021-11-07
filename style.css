@@ -196,10 +196,14 @@ nav {
     z-index: var(--z-index-mid);
 }
 
-nav .container {
+nav .nav-container {
     align-items: center;
     display: flex;
+    flex-direction: column;
+    gap: 22px 0;
+    height: 100%;
     justify-content: center;
+    width: 100%;
 }
 
 nav ul {
@@ -216,7 +220,9 @@ nav ul.jump-links {
 }
 
 nav ul.jump-links li a {
+    display: block;
     letter-spacing: -8px;
+    line-height: calc(54 / 80);
 }
 
 nav ul.my-info {
