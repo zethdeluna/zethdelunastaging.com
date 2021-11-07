@@ -12,13 +12,15 @@ jQuery(function($) {
         return elementBottom > viewportTop && elementTop < viewportBottom;
     };
 
-    $(window).on("scroll", function () {
+    $.fn.fadeIn = $(window).on("scroll", function () {
         $('.fade-in').each(function() {
             if( $(this).isInViewport() ) {
-                $(this).fadeIn(1000).removeClass('hidden');
+                $(this).fadeIn(500).removeClass('hidden');
             }
         });
     });
+
+    window.requestAnimationFrame(fadeIn);
 
     /**********Menu Button**********/
 
