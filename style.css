@@ -126,7 +126,8 @@ header {
 }
 
 .btn.menu {
-    background: var(--almost-black);
+    background-image: linear-gradient(180deg, var(--almost-black) 0, var(--almost-black) 50%, var(--dark-grayish-green) 0, var(--dark-grayish-green));
+    background-size: 80px 40px;
     border: none;
     color: var(--off-white);
     height: 20px;
@@ -135,6 +136,7 @@ header {
 }
 
 .btn.menu:hover {
+    background-position: -100% 100%;
     color: var(--almost-black);
 }
 
