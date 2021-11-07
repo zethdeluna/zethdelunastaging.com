@@ -133,6 +133,18 @@ a:hover {
     color: var(--dark-grayish-green);
 }
 
+/***Fade In***/
+
+.fade-in {
+    animation: 0.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opactiy: 1; }
+}
+
 /*********************************************************************************/
 
 /*HEADER STYLES*/
@@ -432,19 +444,20 @@ nav .my-info a:hover:before {
     content: '';
     height: 50px;
     left: 0;
+    opacity: 0;
     position: absolute;
     transform: translateY(-50%);
     width: 100%;
 }
 
 .hero h1:before {
-    animation: heroLineTop 0.5s ease 0.5s forwards;
+    animation: heroLineTop 0.5s ease 1s forwards;
     border-bottom: 11px solid var(--almost-black);
     top: calc(50% - 25px);
 }
 
 .hero h1:after {
-    animation: heroLineBottom 0.5s ease 0.5s forwards;
+    animation: heroLineBottom 0.5s ease 1s forwards;
     border-top: 11px solid var(--almost-black);
     top: calc(50% + 25px);
 }
