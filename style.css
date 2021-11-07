@@ -191,21 +191,21 @@ header {
 /***Nav***/
 
 nav {
-    display: none;
     height: 100vh;
     left: 0;
     opacity: 0;
     position: fixed;
     top: 0;
-    transition: opacity 0.25s ease;
+    transition: all 0.25s ease;
     transition-delay: var(--first-delay);
+    visibility: hidden;
     width: 100vw;
     z-index: var(--z-index-mid);
 }
 
 nav.active {
-    display: block;
     opacity: 1;
+    visibility: visible;
 }
 
 nav .nav-container {
@@ -228,7 +228,7 @@ nav .nav-container:after {
     position: absolute;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
-    transition: all 0.25s ease;
+    transition: all 0.5s ease;
     transition-delay: var(--second-delay);
     width: 420px;
 }
@@ -239,8 +239,7 @@ nav.active .nav-container:before {
 }
 
 nav.active .nav-container:after {
-    bottom: 116px;
-    top: auto;
+    top: calc(100% - 116px);
     transform: translate3d(-50%, 0, 0);
 }
 
