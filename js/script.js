@@ -4,23 +4,22 @@ jQuery(function($) {
 
     /**********Fade In Effect**********/
 
-    $.fn.isInViewport = function () {
-        let elementTop = $(this).offset().top;
-        let elementBottom = elementTop + $(this).outerHeight();
-        let viewportTop = $(window).scrollTop();
-        let viewportBottom = viewportTop + $(window).height();
-        return elementBottom > viewportTop && elementTop < viewportBottom;
-    };
-
-    $.fn.fadeIn = $(window).on("load ready scroll", function () {
-        $('.fade-in').each(function() {
-            if( $(this).isInViewport() ) {
-                $(this).fadeIn(500).removeClass('hidden');
+    $(window).on('load', function() {
+        $(window).scroll(function() {
+          var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+          $('.fade-in').each(function() {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+            
+            /* If the element is completely within bounds of the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+              if ($(this).css('opacity')==0) {$(this).fadeTo(500,1);}
+            } else { //object goes out of view (scrolling up)
+              if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
             }
-        });
-    });
-
-    window.requestAnimationFrame(fadeIn());
+          });
+        }).scroll(); //invoke scroll-handler on page-load
+      });
 
     /**********Menu Button**********/
 
