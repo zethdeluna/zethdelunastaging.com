@@ -6,9 +6,8 @@ jQuery(function($) {
 
     // Fade In - Hero Only
 
-    setTimeout(function() {
-        $('.hero.fade-in').fadeTo(1000, 1);
-    })
+    $('.hero.fade-in').fadeTo(1000, 1);
+    $('.hero p').fadeTo(1500, 1);
 
     // Fade In/Out
 

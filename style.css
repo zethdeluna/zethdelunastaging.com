@@ -135,6 +135,10 @@ a:hover {
 
 /***Fade In/Out***/
 
+.fade-in {
+    opacity: 0;
+}
+
 .fade-in-out {
     opacity: 1;
 }
@@ -235,7 +239,7 @@ nav .nav-container:after {
     height: 50%;
     left: 50%;
     position: absolute;
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
     transition: all 0.5s ease;
     width: 420px;
     z-index: 1;
@@ -297,14 +301,14 @@ nav .jump-links a:before {
     left: 0;
     position: absolute;
     top: 50%;
-    transform: scaleX(1) translateY(-50%);
+    transform: scaleX(1) translate3d(0, -50%, 0);
     transform-origin: left;
     transition: all 0.25s ease;
     width: 100%;
 }
 
 nav .jump-links a:hover:before {
-    transform: scaleX(0) translateY(-50%);
+    transform: scaleX(0) translate3d(0, -50%, 0);
 }
 
 nav .my-info {
@@ -321,7 +325,7 @@ nav .my-info:before {
     left: 0;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate3d(0, -50%, 0);
     width: 100%;
     z-index: -1;
 }
@@ -358,14 +362,14 @@ nav .my-info a:before {
     left: 0;
     position: absolute;
     top: 50%;
-    transform: scaleX(1) translateY(-50%);
+    transform: scaleX(1) translate3d(0, -50%, 0);
     transform-origin: left;
     transition: all 0.25s ease;
     width: 100%;
 }
 
 nav .my-info a:hover:before {
-    transform: scaleX(0) translateY(-50%);
+    transform: scaleX(0) translate3d(0, -50%, 0);
 }
 
 /*********************************************************************************/
@@ -402,11 +406,6 @@ nav .my-info a:hover:before {
     white-space: nowrap;
 }
 
-@keyframes marqueeScroll {
-    from { transform: rotate(90deg) translateX(0); }
-    to { transform: rotate(90deg) translateX(calc(100% - 100vh)); }
-}
-
 /*********************************************************************************/
 
 /*FRONT PAGE STYLES*/
@@ -416,10 +415,6 @@ nav .my-info a:hover:before {
 .hero {
     height: 100vh;
     width: 100vw;
-}
-
-.fade-in {
-    opacity: 0;
 }
 
 .hero .container {
@@ -443,7 +438,7 @@ nav .my-info a:hover:before {
     height: 50px;
     left: 0;
     position: absolute;
-    transform: translateY(-50%);
+    transform: translate3d(0, -50%, 0);
     width: 100%;
 }
 
@@ -459,24 +454,43 @@ nav .my-info a:hover:before {
     top: calc(50% + 25px);
 }
 
+.hero p {
+    margin-top: 20px;
+}
+
+/*********************************************************************************/
+
+/*KEYFRAMES*/
+
+/*********************************************************************************/
+
+/***Marquee***/
+
+@keyframes marqueeScroll {
+    from { transform: rotate(90deg) translate3d(0, 0, 0); }
+    to { transform: rotate(90deg) translate3d(calc(100% - 100vh), 0, 0); }
+}
+
+/***Hero***/
+
 @keyframes heroLineTop {
     from {
         top: calc(50% - 25px);
-        transform: translateY(-50%);
+        transform: translate3d(0, -50%, 0);
     }
     to {
         top: 0;
-        transform: translateY(-45px);
+        transform: translate3d(0, -45px, 0);
     }
 }
 
 @keyframes heroLineBottom {
     from {
         top: calc(50% + 25px);
-        transform: translateY(-50%);
+        transform: translate3d(0, -50%, 0);
     }
     to {
         top: 100%;
-        transform: translateY(-13px);
+        transform: translate3d(0, -13px, 0);
     }
 }
