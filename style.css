@@ -133,9 +133,9 @@ a:hover {
     color: var(--dark-grayish-green);
 }
 
-/***Fade In***/
+/***Fade In/Out***/
 
-.fade {
+.fade-in-out {
     opacity: 1;
 }
 
@@ -416,6 +416,10 @@ nav .my-info a:hover:before {
 .hero {
     height: 100vh;
     width: 100vw;
+}
+
+.fade-in {
+    opacity: 0;
 }
 
 .hero .container {

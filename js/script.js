@@ -2,12 +2,20 @@
 
 jQuery(function($) {
 
-    /**********Fade In Effect**********/
+    /**********Fade Effects**********/
+
+    // Fade In - Hero Only
+
+    setTimeout(function() {
+        $('.hero.fade-in').fadeTo(1000, 1);
+    })
+
+    // Fade In/Out
 
     $(window).on('load', function() {
         $(window).scroll(function() {
           var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-          $('.fade').each(function() {
+          $('.fade-in-out').each(function() {
             /* Check the location of each desired element */
             var objectBottom = $(this).offset().top + $(this).outerHeight();
             
