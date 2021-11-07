@@ -13,7 +13,7 @@ jQuery(function($) {
     };
 
     $(window).on("load resize scroll", function () {
-        $('.fade-inn').each(function() {
+        $('.fade-in').each(function() {
             if( $(this).isInViewport() ) {
                 $(this).css('opacity', 1);
             }
