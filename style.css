@@ -135,9 +135,8 @@ a:hover {
 
 /***Fade In***/
 
-.fade-in {
-    opacity: 0;
-    transition: all 1s ease;
+.hidden {
+    visibility: hidden;
 }
 
 /*********************************************************************************/

@@ -15,7 +15,7 @@ jQuery(function($) {
     $(window).on("load resize scroll", function () {
         $('.fade-in').each(function() {
             if( $(this).isInViewport() ) {
-                $(this).css('opacity', 1);
+                $(this).fadeIn(1000).removeClass('hidden');
             }
         });
     });
