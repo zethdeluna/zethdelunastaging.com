@@ -20,7 +20,7 @@ jQuery(function($) {
         });
     });
 
-    window.requestAnimationFrame(fadeIn);
+    window.requestAnimationFrame(fadeIn());
 
     /**********Menu Button**********/
 
