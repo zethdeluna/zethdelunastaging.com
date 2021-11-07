@@ -233,6 +233,7 @@ nav .nav-container:before {
 }
 
 nav .active.nav-container:before {
+    left: calc(50% - 210px);
     top: calc(-50% + 116px);
 }
 
@@ -243,6 +244,7 @@ nav .nav-container:after {
 
 nav .active.nav-container:after {
     bottom: calc(-50% + 116px);
+    left: calc(50% + 210px);
 }
 
 nav ul {
