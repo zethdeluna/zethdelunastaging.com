@@ -4,9 +4,9 @@ jQuery(function($) {
 
     /**********Fade Effects**********/
 
-    setTimeout(function() {
-        $('.hero').addClass('active');
-    }, 1000);
+    $('.hero').addClass('active');
+
+    
 
     // Fade In/Out
 

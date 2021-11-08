@@ -414,7 +414,13 @@ nav .my-info a:hover:before {
 
 .hero {
     height: 100vh;
+    opacity: 0;
+    transition: all 0.5s ease;
     width: 100vw;
+}
+
+.hero.active {
+    opacity: 1;
 }
 
 .hero .container {
@@ -441,6 +447,7 @@ nav .my-info a:hover:before {
     position: absolute;
     transform: translate3d(0, -50%, 0);
     transition: all 0.5s ease;
+    transition-delay: 0.5s;
     width: 100%;
 }
 
@@ -481,28 +488,4 @@ nav .my-info a:hover:before {
 @keyframes marqueeScroll {
     from { transform: rotate(90deg) translate3d(0, 0, 0); }
     to { transform: rotate(90deg) translate3d(calc(100% - 100vh), 0, 0); }
-}
-
-/***Hero***/
-
-@keyframes heroLineTop {
-    from {
-        top: calc(50% - 25px);
-        transform: translate3d(0, -50%, 0);
-    }
-    to {
-        top: 0;
-        transform: translate3d(0, -45px, 0);
-    }
-}
-
-@keyframes heroLineBottom {
-    from {
-        top: calc(50% + 25px);
-        transform: translate3d(0, -50%, 0);
-    }
-    to {
-        top: 100%;
-        transform: translate3d(0, -13px, 0);
-    }
 }
