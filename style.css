@@ -471,10 +471,14 @@ nav .my-info a:hover:before {
     transform: translate3d(0, -13px, 0);
 }
 
-.hero p {
+.arrow-down {
+    border-bottom: 2px solid var(--almost-black);
+    border-radius: 2px solid var(--almost-black);
     bottom: 40px;
-    margin: 0;
+    height: 20px;
     position: absolute;
+    transform: rotate(-45deg);
+    width: 20px;
 }
 
 /*********************************************************************************/
