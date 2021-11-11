@@ -547,8 +547,12 @@ nav .my-info a:hover:before {
         bottom: 40px;
         opacity: 1;
     }
-    100% {
+    90% {
         bottom: 40px;
+        opacity: 0;
+    }
+    100% {
+        bottom: 60px;
         opacity: 0;
     }
 }
