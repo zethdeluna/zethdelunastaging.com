@@ -491,7 +491,7 @@ nav .my-info a:hover:before {
 }
 
 .arrow-down.active {
-    animation: downArrow 4s ease infinite;
+    animation: downArrow 2s linear infinite;
 }
 
 /*********************************************************************************/
