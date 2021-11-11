@@ -82,5 +82,6 @@ jQuery(function($) {
     }
 
     build_marquee('.hero', 'Front-end Developer');
+    build_marquee('.about-me', 'About Me');
 
 });

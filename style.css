@@ -75,6 +75,10 @@ body {
     text-transform: uppercase;
 }
 
+main {
+    position: relative;
+}
+
 .container {
     max-width: var(--container-max-width);
     padding: 0 0 0 var(--container-padding-left);
@@ -488,6 +492,30 @@ nav .my-info a:hover:before {
 .arrow-down.active {
     bottom: 40px;
     opacity: 1;
+}
+
+/*********************************************************************************/
+
+/*LEFT CONTACT LINKS*/
+
+/*********************************************************************************/
+
+.left-links {
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    width: 20px;
+}
+
+.left-links .my-info {
+    display: flex;
+    gap: 80px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /*********************************************************************************/
