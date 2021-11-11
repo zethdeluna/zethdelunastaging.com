@@ -12,7 +12,7 @@ jQuery(function($) {
     set1000.forEach(e => {
       setTimeout(function() {
         $(e).addClass('active');
-      })
+      }, 1000);
     });
 
     // Fade In/Out
