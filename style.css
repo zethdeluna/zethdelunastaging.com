@@ -491,7 +491,8 @@ nav .my-info a:hover:before {
 }
 
 .arrow-down.active {
-    animation: downArrow 1.5s linear infinite;
+    bottom: 40px;
+    animation: downArrow 1.5s ease infinite;
 }
 
 /*********************************************************************************/
@@ -540,23 +541,12 @@ nav .my-info a:hover:before {
 
 @keyframes downArrow {
     0% {
-        bottom: 60px;
         opacity: 0;
     }
-    10% {
-        bottom: 60px;
-        opacity: 1;
-    }
     50% {
-        bottom: 40px;
-        opacity: 1;
-    }
-    90% {
-        bottom: 40px;
         opacity: 1;
     }
     100% {
-        bottom: 60px;
         opacity: 0;
     }
 }
