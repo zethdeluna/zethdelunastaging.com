@@ -79,7 +79,7 @@ jQuery(function($) {
 
         $($marquee).html($text.repeat(50));
 
-        let $height = $($marquee).width();
+        let $height = $(window).height() * 4;
         let $startPosition = $(window).height() - $height;
         $($marquee).css('top', $startPosition);
     }

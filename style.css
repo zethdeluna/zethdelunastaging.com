@@ -81,6 +81,7 @@ main {
 }
 
 .container {
+    height: 100%;
     max-width: var(--container-max-width);
     padding: 0 0 0 var(--container-padding-left);
     position: relative;
@@ -423,7 +424,7 @@ nav .my-info a:hover:before {
     height: 20px;
     left: 0;
     opacity: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     transform: rotate(90deg);
     transform-origin: top left;
@@ -472,7 +473,6 @@ nav .my-info a:hover:before {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: center;
 }
 
