@@ -560,6 +560,7 @@ nav .my-info a:hover:before {
 
 .skills .letter-s {
     font-style: italic;
+    line-height: calc(68 / 100);
     opacity: 0.75;
     position: absolute;
     top: 0;
