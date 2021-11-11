@@ -61,6 +61,7 @@
     --transition-speed-2: all 0.5s ease;
     --z-index-highest: 8;
     --z-index-mid: 7;
+    --z-index-low: 1;
 }
 
 html.nav-open {
@@ -507,7 +508,8 @@ nav .my-info a:hover:before {
     top: 0;
     transform: rotate(90deg);
     transform-origin: top left;
-    width: 200vh;
+    width: 100vh;
+    z-index: var(--z-index-low);
 }
 
 .left-links .my-info {
