@@ -406,7 +406,7 @@ nav .my-info a:hover:before {
 }
 
 .marquee span {
-    animation: marqueeScroll 162s linear infinite;
+    animation: marqueeScroll 120s linear infinite;
     left: 100%;
     position: absolute;
     transform: rotate(90deg);
