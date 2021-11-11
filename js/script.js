@@ -6,8 +6,11 @@ jQuery(function($) {
 
     setTimeout(function() {
         $('.hero').addClass('active');
-        $('.arrow-down').addClass('active');
     }, 500);
+
+    setTimeout(function() {
+      $('.arrow-down').addClass('active');
+    }, 1000);
 
     // Fade In/Out
 
