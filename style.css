@@ -491,7 +491,7 @@ nav .my-info a:hover:before {
 }
 
 .arrow-down.active {
-    animation: downArrow 2s linear infinite;
+    animation: downArrow 0.5s linear infinite;
 }
 
 /*********************************************************************************/
@@ -548,7 +548,7 @@ nav .my-info a:hover:before {
         opacity: 1;
     }
     100% {
-        bottom: 20px;
+        bottom: 40px;
         opacity: 0;
     }
 }
