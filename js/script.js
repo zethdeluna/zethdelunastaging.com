@@ -77,9 +77,9 @@ jQuery(function($) {
         $text = $text+$whitespaces;
         let $marquee = $section+' .marquee span';
 
-        $($marquee).html($text.repeat(50));
+        $($marquee).html($text.repeat(80));
 
-        let $height = $(window).height() * 4;
+        let $height = $(window).height() * 10;
         let $startPosition = $(window).height() - $height;
         $($marquee).css('top', $startPosition);
     }
