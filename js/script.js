@@ -8,9 +8,12 @@ jQuery(function($) {
         $('.hero').addClass('active');
     }, 500);
 
-    setTimeout(function() {
-      $('.arrow-down').addClass('active');
-    }, 1000);
+    let set1000 = ['.arrow-down', '.left-links'];
+    set1000.forEach(e => {
+      setTimeout(function() {
+        $(e).addClass('active');
+      })
+    });
 
     // Fade In/Out
 
