@@ -662,6 +662,22 @@ nav .my-info a:hover:before {
     top: auto;
 }
 
+/***Content***/
+
+.about-me .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me .content {
+    width: 508px;
+}
+
+.about-me .content p {
+    font: 400 calc(14rem / 16)/calc(28 / 14) var(--body-font);
+}
+
 /*********************************************************************************/
 
 /*KEYFRAMES*/
