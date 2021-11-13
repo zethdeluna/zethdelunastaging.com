@@ -56,7 +56,7 @@
     --container-width: calc(100vw - 60px);
     --container-max-width: 1600px;
     --container-margin: calc((100vw - var(--container-width)) / 2);
-    --container-padding-left: 70px;
+    --container-padding-left: 60px;
     --transition-speed-1: all 0.25s ease;
     --transition-speed-2: all 0.5s ease;
     --z-1: 1;
@@ -83,7 +83,6 @@ main {
 
 .container {
     height: 100%;
-    max-width: var(--container-max-width);
     padding: 0 0 0 var(--container-padding-left);
     position: relative;
     width: var(--container-width);
@@ -455,6 +454,34 @@ nav .my-info a:hover:before {
 
 /*********************************************************************************/
 
+/*TITLES*/
+
+/*********************************************************************************/
+
+.title {
+    position: absolute;
+}
+
+.title span {
+    border: 2px solid var(--almost-black);
+    font: 400 calc(25rem / 16)/calc(25 / 25) var(--body-font);
+    height: max-content;
+    left: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: rotate(90deg) translate3d(-50%, -50%, 0);
+    width: max-content;
+}
+
+.title span.inverted {
+    background: var(--almost-black);
+    color: var(--off-white);
+    transform: rotate(90deg) scale(1, -1) translate3d(-50%, -50%, 0);
+}
+
+/*********************************************************************************/
+
 /*FRONT PAGE STYLES*/
 
 /*********************************************************************************/
@@ -545,6 +572,24 @@ nav .my-info a:hover:before {
     width: 100vw;
 }
 
+/***Titles***/
+
+/*Left*/
+
+.title.left {
+    height: 100%;
+    left: 60px;
+    top: 0;
+    width: 80px;
+}
+
+.title.right {
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 80px;
+}
+
 /***Skills***/
 
 .skills-container {
@@ -596,7 +641,7 @@ nav .my-info a:hover:before {
     bottom: 20px;
     height: 100px;
     position: absolute;
-    right: 80px;
+    right: 20px;
     width: 80px;
 }
 
