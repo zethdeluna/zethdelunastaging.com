@@ -81,6 +81,11 @@ main {
     position: relative;
 }
 
+section:not(.left-links) {
+    height: 100vh;
+    width: 100vw;
+}
+
 .container {
     height: 100%;
     padding: 0 0 0 var(--container-padding-left);
@@ -488,10 +493,8 @@ nav .my-info a:hover:before {
 /*********************************************************************************/
 
 .hero {
-    height: 100vh;
     opacity: 0;
     transition: var(--transition-speed-2);
-    width: 100vw;
 }
 
 .hero.active {
@@ -567,11 +570,6 @@ nav .my-info a:hover:before {
 /*ABOUT ME*/
 
 /*********************************************************************************/
-
-.about-me {
-    height: 100vh;
-    width: 100vw;
-}
 
 /***Titles***/
 
@@ -677,6 +675,14 @@ nav .my-info a:hover:before {
 .about-me .content p {
     font: 400 calc(14rem / 16)/calc(28 / 14) var(--body-font);
 }
+
+/*********************************************************************************/
+
+/*ABOUT ME*/
+
+/*********************************************************************************/
+
+
 
 /*********************************************************************************/
 
