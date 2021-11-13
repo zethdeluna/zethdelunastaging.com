@@ -59,9 +59,10 @@
     --container-padding-left: 70px;
     --transition-speed-1: all 0.25s ease;
     --transition-speed-2: all 0.5s ease;
-    --z-index-highest: 8;
-    --z-index-mid: 7;
-    --z-index-low: 1;
+    --z-1: 1;
+    --z-2: 2;
+    --z-3: 3;
+    --z-4: 4;
 }
 
 html.nav-open {
@@ -162,7 +163,7 @@ header {
     right: 0;
     top: 100px;
     width: 100vw;
-    z-index: var(--z-index-highest);
+    z-index: var(--z-4);
 }
 
 /***Menu Button***/
@@ -183,7 +184,7 @@ header {
     padding-bottom: 1px;
     transition: var(--transition-speed-1);
     width: 80px;
-    z-index: var(--z-index-highest);
+    z-index: var(--z-4);
 }
 
 .btn.menu:hover {
@@ -202,7 +203,7 @@ header {
     top: 0;
     transition: var(--transition-speed-1);
     width: 20px;
-    z-index: var(--z-index-highest);
+    z-index: var(--z-4);
 }
 
 .btn.menu:hover:before {
@@ -430,7 +431,7 @@ nav .my-info a:hover:before {
     transform-origin: top left;
     transition: var(--transition-speed-2);
     width: 100vh;
-    z-index: var(--z-index-low);
+    z-index: var(--z-1);
 }
 
 .left-links.active {
@@ -544,7 +545,9 @@ nav .my-info a:hover:before {
     width: 100vw;
 }
 
-.about-me .skills-container {
+/***Skills***/
+
+.skills-container {
     height: 100px;
     left: 80px;
     position: absolute;
@@ -558,29 +561,48 @@ nav .my-info a:hover:before {
     width: 100%;
 }
 
-.skills .letter-s {
+.letter {
     font-style: italic;
     line-height: calc(68 / 100);
     opacity: 0.75;
     position: absolute;
+    text-transform: uppercase;
     top: 0;
 }
 
-.skills .letter-s.gray {
+.letter.gray {
     color: var(--almost-black);
     left: 0;
 }
-.skills .letter-s.green {
+.letter.green {
     color: var(--dark-grayish-green);
-    left: 10px;
+    left: 12px;
 }
 
-.skills .btn.open-skills {
+.skills .btn.open-skills,
+.edu .btn.open-edu {
     background: var(--dark-grayish-green);
     bottom: 0;
     height: 20px;
     left: 0;
     position: absolute;
+    width: 100%;
+    z-index: var(--z-4);
+}
+
+/***Education***/
+
+.edu-container {
+    bottom: 20px;
+    height: 100px;
+    position: absolute;
+    right: 80px;
+    width: 80px;
+}
+
+.edu {
+    height: 100%;
+    position: relative;
     width: 100%;
 }
 
