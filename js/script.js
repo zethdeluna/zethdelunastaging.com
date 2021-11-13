@@ -80,11 +80,12 @@ jQuery(function($) {
         $($marquee).html($text.repeat(80));
 
         let $height = $(window).height() * 10;
-        let $startPosition = $(window).height() - $height;
+        let $startPosition = ( $(window).height() * 2 ) - $height;
         $($marquee).css('top', $startPosition);
     }
 
     build_marquee('.hero', 'Front-end Developer');
     build_marquee('.about-me', 'About Me');
+    build_marquee('.projects', 'Projects')
 
 });
