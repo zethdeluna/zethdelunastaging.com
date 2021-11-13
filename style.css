@@ -471,6 +471,7 @@ nav .my-info a:hover:before {
     text-transform: uppercase;
     top: 50%;
     transform: rotate(90deg) translate3d(-50%, -50%, 0);
+    transform-origin: top left;
     width: max-content;
 }
 
@@ -578,14 +579,14 @@ nav .my-info a:hover:before {
 
 .title.left {
     height: 100%;
-    left: 60px;
+    left: 80px;
     top: 0;
     width: 80px;
 }
 
 .title.right {
     height: 100%;
-    right: 0;
+    right: 20px;
     top: 0;
     width: 80px;
 }
@@ -649,6 +650,16 @@ nav .my-info a:hover:before {
     height: 100%;
     position: relative;
     width: 100%;
+}
+
+.edu .btn.open-edu {
+    bottom: auto;
+    top: 0;
+}
+
+.edu .letter {
+    bottom: 0;
+    top: auto;
 }
 
 /*********************************************************************************/
