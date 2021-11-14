@@ -226,7 +226,7 @@ nav {
     transition: var(--transition-speed-1);
     visibility: hidden;
     width: 100vw;
-    z-index: var(--z-4);
+    z-index: var(--z-3);
 }
 
 nav.active {
