@@ -226,7 +226,7 @@ nav {
     transition: var(--transition-speed-1);
     visibility: hidden;
     width: 100vw;
-    z-index: var(--z-index-mid);
+    z-index: var(--z-4);
 }
 
 nav.active {
@@ -599,7 +599,7 @@ nav .my-info a:hover:before {
     width: 80px;
 }
 
-.skills-container .skills {
+.skills-container .skills-front {
     height: 100%;
     position: relative;
     width: 100%;
@@ -623,8 +623,8 @@ nav .my-info a:hover:before {
     left: 12px;
 }
 
-.skills .btn.open-skills,
-.edu .btn.open-edu {
+.skills-front .btn.open-skills,
+.edu-front .btn.open-edu {
     background: var(--dark-grayish-green);
     bottom: 0;
     height: 20px;
@@ -632,6 +632,11 @@ nav .my-info a:hover:before {
     position: absolute;
     width: 100%;
     z-index: var(--z-4);
+}
+
+.nav-open .btn.open-skills,
+.nav-open .btn.open-edu {
+    z-index: 1;
 }
 
 /***Education***/
@@ -644,18 +649,18 @@ nav .my-info a:hover:before {
     width: 80px;
 }
 
-.edu {
+.edu-front {
     height: 100%;
     position: relative;
     width: 100%;
 }
 
-.edu .btn.open-edu {
+.edu-front .btn.open-edu {
     bottom: auto;
     top: 0;
 }
 
-.edu .letter {
+.edu-front .letter {
     bottom: 0;
     top: auto;
 }
