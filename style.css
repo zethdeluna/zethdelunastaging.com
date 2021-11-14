@@ -639,6 +639,25 @@ nav .my-info a:hover:before {
     z-index: 1;
 }
 
+.skills {
+    border-left: 2px solid var(--almost-black);
+    border-right: 2px solid var(--almost-black);
+    display: flex;
+    flex-direction: column;
+    left: 180px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+}
+
+.skills ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 /***Education***/
 
 .edu-container {
