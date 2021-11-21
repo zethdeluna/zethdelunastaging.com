@@ -639,7 +639,8 @@ nav .my-info a:hover:before {
     z-index: var(--z-1);
 }
 
-.skills {
+.skills,
+.education {
     border-left: 2px solid var(--almost-black);
     border-right: 2px solid var(--almost-black);
     display: flex;
