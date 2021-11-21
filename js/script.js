@@ -41,19 +41,19 @@ jQuery(function($) {
         e.stopPropagation();
         e.stopImmediatePropagation();
 
-        $('html').toggleClass('nav-open');
-
         if ($('nav').hasClass('active')) {
             $(this).text('Menu');
 
             setTimeout(function() {
-                $('nav').removeClass('active');
-                $('.nav-container').removeClass('active');
+              $('html').removeClass('nav-open');
+              $('nav').removeClass('active');
+              $('.nav-container').removeClass('active');
             }, 750);
 
         } else {
             $(this).text('Close');
 
+            $('html').addClass('nav-open');
             $('nav').addClass('active');
 
             setTimeout(function() {
