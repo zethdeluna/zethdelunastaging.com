@@ -105,4 +105,14 @@ jQuery(function($) {
     $('.education .top-list').append(topEducationList.repeat(4));
     $('.education .bottom-list').append(bottomEducationList.repeat(4));
 
+    // Buttons
+
+    $('.btn.open-skills').on('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+
+      $('.skills').toggleClass('active');
+    });
+
 });

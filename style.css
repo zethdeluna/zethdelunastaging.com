@@ -646,11 +646,20 @@ nav .my-info a:hover:before {
     display: flex;
     flex-direction: column;
     left: 100px;
+    opacity: 0;
     overflow: hidden;
     position: absolute;
     top: 16px;
     transform: skewX(-15deg);
+    transition: all 0.25s ease;
+    visibility: hidden;
     width: 350px;
+}
+
+.skills.active,
+.education.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .skills ul,
