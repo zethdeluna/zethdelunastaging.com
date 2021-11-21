@@ -662,7 +662,7 @@ nav .my-info a:hover:before {
     transform: skewX(15deg);
 }
 
-.skills ul.top-skills {
+.skills ul.top-list {
     animation: topSkills 10s linear infinite;
     left: 0;
     position: relative;
