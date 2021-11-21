@@ -702,6 +702,13 @@ nav .my-info a:hover:before {
     top: auto;
 }
 
+.education {
+    bottom: 9px;
+    left: auto;
+    right: 100px;
+    top: auto;
+}
+
 .education ul li {
     align-items: flex-end;
     display: flex;
