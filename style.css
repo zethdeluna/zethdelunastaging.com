@@ -489,9 +489,9 @@ nav .my-info a:hover:before {
 /***Top***/
 
 .title.top {
-    height: 80px;
+    height: 30px;
     right: 0;
-    top: 0;
+    top: 70px;
     width: calc(100% - var(--container-padding-left));
 }
 
@@ -499,9 +499,9 @@ nav .my-info a:hover:before {
 
 .title.right {
     height: 100%;
-    right: 20px;
+    right: 60px;
     top: 0;
-    width: 80px;
+    width: 30px;
 }
 
 .title.right span.inverted {
@@ -510,13 +510,20 @@ nav .my-info a:hover:before {
 
 /***Bottom***/
 
+.title.bottom {
+    bottom: 70px;
+    height: 30px;
+    right: 0;
+    width: calc(100% - var(--container-padding-left));
+}
+
 /***Left***/
 
 .title.left {
     height: 100%;
-    left: 80px;
+    left: 60px;
     top: 0;
-    width: 80px;
+    width: 30px;
 }
 
 .title.left span {
@@ -608,6 +615,22 @@ nav .my-info a:hover:before {
 /*ABOUT ME*/
 
 /*********************************************************************************/
+
+/***Titles***/
+
+/*Left*/
+
+.about-me .title.left {
+    left: 80px;
+    width: 80px;
+}
+
+/*Right*/
+
+.about-me .title.right {
+    right: 20px;
+    width: 80px;
+}
 
 /***Skills***/
 
