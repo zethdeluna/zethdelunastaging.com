@@ -630,13 +630,19 @@ nav .my-info a:hover:before {
 
 .skills-front .btn.open-skills,
 .edu-front .btn.open-edu {
+    animation: 5s flicker linear infinite;
     background: var(--dark-grayish-green);
     bottom: 0;
+    font-weight: 400;
     height: 20px;
     left: 0;
     position: absolute;
     width: 100%;
     z-index: var(--z-4);
+}
+
+.edu-front .btn.open-edu {
+    animation-delay: 1s;
 }
 
 .nav-open .btn.open-skills,
@@ -788,4 +794,28 @@ nav .my-info a:hover:before {
 
 @keyframes bottomSkills {
     to { left: 0; }
+}
+
+@keyframes flicker {
+    0% { background-color: var(--dark-grayish-green) }
+    8% { background-color: var(--dark-grayish-green) }
+    10% { background-color: var(--off-white) }
+    12% { background-color: var(--dark-grayish-green) }
+    32% { background-color: var(--dark-grayish-green) } 
+    34% { background-color: var(--off-white) }
+    36% { background-color: var(--dark-grayish-green) }
+    38% { background-color: var(--off-white) }
+    40% { background-color: var(--dark-grayish-green) }
+    42% { background-color: var(--off-white) }
+    44% { background-color: var(--dark-grayish-green) }
+    46% { background-color: var(--off-white) }
+    48% { background-color: var(--dark-grayish-green) }
+    68% { background-color: var(--dark-grayish-green) }
+    70% { background-color: var(--off-white) }
+    72% { background-color: var(--dark-grayish-green) }
+    74% { background-color: var(--off-white) }
+    76% { background-color: var(--dark-grayish-green) }
+    78% { background-color: var(--off-white) }
+    80% { background-color: var(--dark-grayish-green) }
+    100% { background-color: var(--dark-grayish-green) }
 }
