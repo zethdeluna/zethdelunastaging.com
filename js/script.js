@@ -87,4 +87,14 @@ jQuery(function($) {
     build_marquee('.about-me', 'About Me');
     build_marquee('.projects', 'Projects')
 
+    /**********Skills & Education Marquees**********/
+
+    // Skills List
+
+    let topSkillsList = '<li>HTML5</li><li>CSS3</li><li>JavaScript/JQuery</li><li>PHP</li>';
+    let bottomSkillsList = '<li>WordPress</li><li>Sketch</li><li>Figma</li><li>Git</li>';
+
+    $('.skills .top-list').append(topSkillsList.repeat(4));
+    $('.skills .bottom-list').append(bottomSkillsList.repeat(4));
+
 });
