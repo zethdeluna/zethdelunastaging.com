@@ -73,6 +73,7 @@ body {
     background: var(--off-white);
     color: var(--almost-black);
     font: 1rem var(--body-font);
+    font-variant-numeric: slashed-zero;
     margin: 0;
     text-transform: uppercase;
 }
@@ -840,16 +841,17 @@ nav .my-info a:hover:before {
     font-weight: 300;
     height: max-content;
     left: 0;
+    padding: 5px 0;
     position: sticky;
     text-align: center;
-    top: 10px;
+    top: 0;
     width: 100%;
 }
 
 .projects-list ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     list-style: none;
     margin: 10px 0 0;
     padding: 0;
@@ -857,6 +859,7 @@ nav .my-info a:hover:before {
 
 .btn.project {
     letter-spacing: -4px;
+    line-height: 1;
     text-align: left;
     width: 100%;
 }
