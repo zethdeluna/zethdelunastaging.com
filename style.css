@@ -662,6 +662,12 @@ nav .my-info a:hover:before {
     transform: skewX(15deg);
 }
 
+.skills ul.top-skills {
+    animation: topSkills 10s linear infinite;
+    left: 0;
+    position: relative;
+}
+
 /***Education***/
 
 .edu-container {
@@ -706,7 +712,7 @@ nav .my-info a:hover:before {
 
 /*********************************************************************************/
 
-/*ABOUT ME*/
+/**/
 
 /*********************************************************************************/
 
@@ -721,8 +727,6 @@ nav .my-info a:hover:before {
 /***Marquee***/
 
 @keyframes marqueeScroll {
-    /* from { transform: rotate(90deg) translate3d(0, 0, 0); }
-    to { transform: rotate(90deg) translate3d(calc(100% - 100vh), 0, 0); } */
     to { top: 0; }
 }
 
@@ -731,4 +735,12 @@ nav .my-info a:hover:before {
     20% { opacity: 1; }
     80% { opacity: 1; }
     100% { opacity: 0; }
+}
+
+@keyframes topSkills {
+    to { left: -400%; }
+}
+
+@keyframes bottomSkills {
+    to { right: -400%; }
 }
