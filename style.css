@@ -476,6 +476,7 @@ nav .my-info a:hover:before {
     text-transform: uppercase;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
+    transform-origin: top left;
     width: max-content;
 }
 
@@ -520,7 +521,6 @@ nav .my-info a:hover:before {
 
 .title.left span {
     transform: rotate(90deg) translate3d(-50%, -50%, 0);
-    transform-origin: top left;
 }
 
 
