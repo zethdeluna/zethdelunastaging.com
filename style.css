@@ -671,7 +671,7 @@ nav .my-info a:hover:before {
 
 .bottom-list {
     animation: bottomSkills 44s linear infinite;
-    right: 0;
+    left: -400%;
     position: relative;
 }
 
@@ -749,5 +749,5 @@ nav .my-info a:hover:before {
 }
 
 @keyframes bottomSkills {
-    to { right: -400%; }
+    to { left: 0; }
 }
