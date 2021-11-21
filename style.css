@@ -134,6 +134,7 @@ button {
 .btn {
     background: transparent;
     border: none;
+    font-variant-numeric: slashed-zero;
     font-weight: 600;
 }
 
