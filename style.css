@@ -625,7 +625,7 @@ nav .my-info a:hover:before {
 }
 
 .skills-front .letter.green.active {
-    left: 480px;
+    left: 446px;
 }
 
 .skills-front .btn.open-skills,
@@ -650,7 +650,7 @@ nav .my-info a:hover:before {
     border-right: 2px solid var(--almost-black);
     display: flex;
     flex-direction: column;
-    left: 100px;
+    left: 80px;
     opacity: 0;
     overflow: hidden;
     position: absolute;
