@@ -834,7 +834,7 @@ nav .my-info a:hover:before {
     border-bottom: 2px solid var(--almost-black);
     border-top: 2px solid var(--almost-black);
     height: 500px;
-    left: calc(var(--container-padding-left) + 20px);
+    margin-left: 20px;
     overflow-y: scroll;
     width: 200px;
 }
@@ -875,7 +875,15 @@ nav .my-info a:hover:before {
 .preview-box {
     border: 2px solid var(--almost-black);
     height: 500px;
+    position: relative;
     width: 500px;
+}
+
+/***Preview Description***/
+
+.preview-description {
+    height: 500px;
+    width: 200px;
 }
 
 /*********************************************************************************/
