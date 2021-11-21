@@ -822,6 +822,8 @@ nav .my-info a:hover:before {
 
 /*********************************************************************************/
 
+/***Projects List***/
+
 .projects-list {
     border-bottom: 2px solid var(--almost-black);
     border-top: 2px solid var(--almost-black);
@@ -863,6 +865,18 @@ nav .my-info a:hover:before {
     line-height: 1;
     text-align: left;
     width: 100%;
+}
+
+/***Preview Box***/
+
+.preview-box {
+    border: 2px solid var(--almost-black);
+    height: 500px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 500px;
 }
 
 /*********************************************************************************/
