@@ -62,7 +62,6 @@ jQuery(function($) {
             }, 500);
         }
 
-        
     })
 
     /**********Marquees**********/
@@ -112,7 +111,26 @@ jQuery(function($) {
       e.stopPropagation();
       e.stopImmediatePropagation();
 
-      $('.skills').toggleClass('active');
+      if ($('.skills-front').hasClass('active')) {
+
+        $(this).removeClass('active');
+        $('skills').removeClass('active');
+
+        setTimeout(function() {
+          $('.skills-front .letter.green').removeClass('active');
+        }, 250);
+
+      } else {
+
+        $(this).addClass('active');
+        $('.skills-front .letter.green').addClass('active');
+
+        setTimeout(function() {
+          $('.skills').addClass('active');
+        }, 250);
+
+      }
+
     });
 
 });

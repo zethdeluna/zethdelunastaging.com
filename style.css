@@ -612,6 +612,7 @@ nav .my-info a:hover:before {
     position: absolute;
     text-transform: uppercase;
     top: 0;
+    transition: all 0.25s ease;
 }
 
 .letter.gray {
@@ -621,6 +622,10 @@ nav .my-info a:hover:before {
 .letter.green {
     color: var(--dark-grayish-green);
     left: 12px;
+}
+
+.skills-front .letter.green.active {
+    left: 458px;
 }
 
 .skills-front .btn.open-skills,
