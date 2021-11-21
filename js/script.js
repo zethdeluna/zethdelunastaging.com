@@ -133,4 +133,31 @@ jQuery(function($) {
 
     });
 
+    $('.btn.open-edu').on('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+
+      if ($('.edu-front').hasClass('active')) {
+
+        $('.edu-front').removeClass('active');
+        $('.education').removeClass('active');
+
+        setTimeout(function() {
+          $('.edu-front .letter.gray').removeClass('active');
+        }, 250);
+
+      } else {
+
+        $('.edu-front').addClass('active');
+        $('.edu-front .letter.gray').addClass('active');
+
+        setTimeout(function() {
+          $('.education').addClass('active');
+        }, 250);
+
+      }
+
+    })
+
 });

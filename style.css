@@ -716,10 +716,14 @@ nav .my-info a:hover:before {
     top: auto;
 }
 
+.edu-front .letter.gray.active {
+    left: -434px;
+}
+
 .education {
     bottom: 9px;
     left: auto;
-    right: 100px;
+    right: 80px;
     top: auto;
 }
 
