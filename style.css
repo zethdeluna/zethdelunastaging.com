@@ -883,6 +883,7 @@ nav .my-info a:hover:before {
 
 .preview-description {
     height: 500px;
+    margin-right: 20px;
     width: 200px;
 }
 
