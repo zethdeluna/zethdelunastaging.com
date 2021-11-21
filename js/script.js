@@ -48,10 +48,8 @@ jQuery(function($) {
 
             setTimeout(function() {
                 $('nav').removeClass('active');
+                $('.nav-container').removeClass('active');
             }, 750);
-
-            $('.nav-container').removeClass('active');
-
 
         } else {
             $(this).text('Close');
