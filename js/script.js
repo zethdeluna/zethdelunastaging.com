@@ -44,10 +44,11 @@ jQuery(function($) {
         if ($('nav').hasClass('active')) {
             $(this).text('Menu');
 
+            $('.nav-container').removeClass('active');
+
             setTimeout(function() {
               $('html').removeClass('nav-open');
               $('nav').removeClass('active');
-              $('.nav-container').removeClass('active');
             }, 750);
 
         } else {
