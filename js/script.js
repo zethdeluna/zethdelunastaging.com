@@ -113,7 +113,7 @@ jQuery(function($) {
 
       if ($('.skills-front').hasClass('active')) {
 
-        $(this).removeClass('active');
+        $('.skills-front').removeClass('active');
         $('skills').removeClass('active');
 
         setTimeout(function() {
@@ -122,7 +122,7 @@ jQuery(function($) {
 
       } else {
 
-        $(this).addClass('active');
+        $('.skills-front').addClass('active');
         $('.skills-front .letter.green').addClass('active');
 
         setTimeout(function() {
