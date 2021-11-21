@@ -652,7 +652,8 @@ nav .my-info a:hover:before {
     width: 350px;
 }
 
-.skills ul {
+.skills ul,
+.education ul {
     display: flex;
     font: 400 calc(14rem / 16)/calc(24 / 14) var(--body-font);
     gap: 40px;
@@ -662,9 +663,15 @@ nav .my-info a:hover:before {
     transform: skewX(15deg);
 }
 
-.skills ul.top-list {
-    animation: topSkills 10s linear infinite;
+.top-list {
+    animation: topSkills 44s linear infinite;
     left: 0;
+    position: relative;
+}
+
+.bottom-list {
+    animation: bottomSkills 44s linear infinite;
+    right: 0;
     position: relative;
 }
 

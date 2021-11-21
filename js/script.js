@@ -97,4 +97,12 @@ jQuery(function($) {
     $('.skills .top-list').append(topSkillsList.repeat(4));
     $('.skills .bottom-list').append(bottomSkillsList.repeat(4));
 
+    // Education List
+
+    let topEducationList = '<li>B.S. <span>in</span> Astrophysics</li><li>California State University, Northridge</li>';
+    let bottomEducationList = '<li>FreeCodeCamp.org</li><li>FrontEndMentor.io</li><li>Personal Projects</li>';
+
+    $('.education .top-list').append(topEducationList.repeat(4));
+    $('.education .bottom-list').append(bottomEducationList.repeat(4));
+
 });
