@@ -475,16 +475,54 @@ nav .my-info a:hover:before {
     position: absolute;
     text-transform: uppercase;
     top: 50%;
-    transform: rotate(90deg) translate3d(-50%, -50%, 0);
-    transform-origin: top left;
+    transform: translate3d(-50%, -50%, 0);
     width: max-content;
 }
 
 .title span.inverted {
     background: var(--almost-black);
     color: var(--off-white);
+    transform: scale(1, -1) translate3d(-50%, -50%, 0);
+}
+
+/***Top***/
+
+.title.top {
+    height: 80px;
+    right: 0;
+    top: 0;
+    width: calc(100% - var(--container-padding-left));
+}
+
+/***Right***/
+
+.title.right {
+    height: 100%;
+    right: 20px;
+    top: 0;
+    width: 80px;
+}
+
+.title.right span.inverted {
     transform: rotate(90deg) scale(1, -1) translate3d(-50%, -50%, 0);
 }
+
+/***Bottom***/
+
+/***Left***/
+
+.title.left {
+    height: 100%;
+    left: 80px;
+    top: 0;
+    width: 80px;
+}
+
+.title.left span {
+    transform: rotate(90deg) translate3d(-50%, -50%, 0);
+    transform-origin: top left;
+}
+
 
 /*********************************************************************************/
 
@@ -570,24 +608,6 @@ nav .my-info a:hover:before {
 /*ABOUT ME*/
 
 /*********************************************************************************/
-
-/***Titles***/
-
-/*Left*/
-
-.title.left {
-    height: 100%;
-    left: 80px;
-    top: 0;
-    width: 80px;
-}
-
-.title.right {
-    height: 100%;
-    right: 20px;
-    top: 0;
-    width: 80px;
-}
 
 /***Skills***/
 
