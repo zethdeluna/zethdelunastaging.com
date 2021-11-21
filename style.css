@@ -628,8 +628,8 @@ nav .my-info a:hover:before {
     left: 446px;
 }
 
-.skills-front .btn.open-skills,
-.edu-front .btn.open-edu {
+.btn.open-skills,
+.btn.open-edu {
     animation: 5s flicker linear infinite;
     background: var(--dark-grayish-green);
     bottom: 0;
@@ -637,12 +637,21 @@ nav .my-info a:hover:before {
     height: 20px;
     left: 0;
     position: absolute;
+    transition: all 0.25s ease;
     width: 100%;
     z-index: var(--z-4);
 }
 
-.edu-front .btn.open-edu {
+.btn.open-edu {
     animation-delay: 1s;
+}
+
+.btn.open-skills:hover,
+.btn.open-edu:hover {
+    animation: none;
+    background: var(--almost-black);
+    color: var(--off-white);
+    opacity: 0.75;
 }
 
 .nav-open .btn.open-skills,
