@@ -822,6 +822,12 @@ nav .my-info a:hover:before {
 
 /*********************************************************************************/
 
+.projects .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 /***Projects List***/
 
 .projects-list {
@@ -830,9 +836,6 @@ nav .my-info a:hover:before {
     height: 500px;
     left: calc(var(--container-padding-left) + 20px);
     overflow-y: scroll;
-    position: absolute;
-    top: 50%;
-    transform: translate3d(0, -50%, 0);
     width: 200px;
 }
 
@@ -872,10 +875,6 @@ nav .my-info a:hover:before {
 .preview-box {
     border: 2px solid var(--almost-black);
     height: 500px;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate3d(-50%, -50%, 0);
     width: 500px;
 }
 
