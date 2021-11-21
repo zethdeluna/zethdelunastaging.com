@@ -702,6 +702,18 @@ nav .my-info a:hover:before {
     top: auto;
 }
 
+.education ul li {
+    align-items: flex-end;
+    display: flex;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.education ul li span {
+    font-size: calc(12rem / 16);
+    line-height: calc(22 / 12);
+}
+
 /***Content***/
 
 .about-me .container {
