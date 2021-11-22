@@ -423,6 +423,7 @@ nav .my-info a:hover:before {
     position: absolute;
     transform: rotate(90deg);
     transform-origin: top left;
+    -webkit-animation: marqueeScroll 120s linear infinite;
     white-space: nowrap;
 }
 
@@ -613,8 +614,9 @@ nav .my-info a:hover:before {
 }
 
 .arrow-down.active {
-    bottom: 40px;
     animation: downArrow 8s ease infinite;
+    bottom: 40px;
+    -webkit-animation: downArrow 8s ease infinite;
 }
 
 /*********************************************************************************/
@@ -688,6 +690,7 @@ nav .my-info a:hover:before {
     left: 0;
     position: absolute;
     transition: var(--transition-speed-1);
+    -webkit-animation: 5s flicker linear infinite;
     width: 100%;
     z-index: var(--z-4);
 }
@@ -702,6 +705,7 @@ nav .my-info a:hover:before {
     background: var(--almost-black);
     color: var(--off-white);
     opacity: 0.75;
+    -webkit-animation: none;
 }
 
 .nav-open .btn.open-skills,
@@ -747,12 +751,14 @@ nav .my-info a:hover:before {
     animation: topSkills 44s linear infinite;
     left: 0;
     position: relative;
+    -webkit-animation: topSkills 44s linear infinite;
 }
 
 .bottom-list {
     animation: bottomSkills 44s linear infinite;
     left: -400%;
     position: relative;
+    -webkit-animation: bottomSkills 44s linear infinite;
 }
 
 /***Education***/
