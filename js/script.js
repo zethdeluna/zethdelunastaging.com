@@ -169,10 +169,10 @@ jQuery(function($) {
       $project.on('mouseenter', function() {
 
         $('.project-image').each(function() {
-          $(this).css('z-index', -1);
+          $(this).removeClass('active');
         });
 
-        $projectImage.css('z-index', 1);
+        $projectImage.addClass('active');
 
       });
 
