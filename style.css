@@ -252,10 +252,11 @@ nav .nav-container {
     width: 100%;
 }
 
-nav .nav-container:before,
-nav .nav-container:after {
+nav .nav-container .cover-top,
+nav .nav-container .cover-bottom {
     background: var(--off-white);
     content: '';
+    display: block;
     height: 50%;
     left: 50%;
     position: absolute;
@@ -265,22 +266,22 @@ nav .nav-container:after {
     z-index: 1;
 }
 
-nav .nav-container:before {
+nav .nav-container .cover-top {
     border-bottom: 4px solid var(--almost-black);
     top: 0;
 }
 
-nav .active.nav-container:before {
+nav .active.nav-container .cover-top {
     left: calc(50% - 210px);
     top: calc(-50% + 116px);
 }
 
-nav .nav-container:after {
+nav .nav-container .cover-bottom {
     border-top: 4px solid var(--almost-black);
     bottom: 0;
 }
 
-nav .active.nav-container:after {
+nav .active.nav-container .cover-bottom {
     bottom: calc(-50% + 116px);
     left: calc(50% + 210px);
 }
