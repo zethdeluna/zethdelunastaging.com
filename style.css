@@ -997,10 +997,12 @@ nav .my-info a:hover:before {
 /***Marquee***/
 
 @keyframes marqueeScroll {
+    0% { top: -800vh; }
     100% { top: 0; }
 }
 
 @-webkit-keyframes marqueeScroll {
+    0% { top: -800vh; }
     100% { top: 0; }
 }
 
