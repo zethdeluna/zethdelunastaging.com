@@ -106,6 +106,7 @@ h5,
 .heading-5,
 h6,
 .heading-6 {
+    font-variant: small-caps;
     font-weight: 600;
     margin: 0;
 }
@@ -113,6 +114,7 @@ h6,
 h1,
 .heading-1 {
     font-size: calc(100rem / 16);
+    font-variant: none;
 }
 
 h2,
@@ -125,15 +127,19 @@ h3,
     font-size: calc(50rem / 16);
 }
 
+p,
+a {
+    font-variant: small-caps;
+}
+
+.small {
+    font-size: calc(12rem / 16);
+}
+
 button {
     cursor: pointer;
     font-family: var(--body-font);
     text-transform: uppercase;
-}
-
-.p-font {
-    font-size: calc(16rem / 16);
-    font-weight: 400;
 }
 
 .btn {
@@ -830,7 +836,8 @@ nav .my-info a:hover:before {
 .projects .container {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    gap: calc(100 / 1440 * 100%);
+    justify-content: center;
 }
 
 /***Projects List***/
@@ -840,6 +847,7 @@ nav .my-info a:hover:before {
     border-top: 2px solid var(--almost-black);
     height: 500px;
     margin-left: 20px;
+    min-width: 200px;
     overflow-y: scroll;
     width: 200px;
 }
@@ -892,6 +900,7 @@ nav .my-info a:hover:before {
 .preview-box .preview-image {
     height: 100%;
     left: 0;
+    object-fit: contain;
     opacity: 0;
     position: absolute;
     top: 0;
@@ -931,6 +940,11 @@ nav .my-info a:hover:before {
 .preview-description.active {
     opacity: 1;
     visibility: visible;
+}
+
+.preview-description h3 {
+    font-size: calc(14rem / 16);
+    font-weight: 500;
 }
 
 /*********************************************************************************/
