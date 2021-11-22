@@ -297,11 +297,10 @@ nav .jump-links {
     display: flex;
     flex-direction: column;
     opacity: 0;
-    transition: var(--transition-speed-1);
     width: 420px;
 }
 
-nav .nav-container.active .jump-links {
+nav .jump-links.active {
     opacity: 1;
 }
 
@@ -342,11 +341,10 @@ nav .my-info {
     justify-content: space-between;
     opacity: 0;
     position: relative;
-    transition: var(--transition-speed-1);
     width: 420px;
 }
 
-nav .nav-container.active .my-info {
+nav .my-info.active {
     opacity: 1;
 }
 

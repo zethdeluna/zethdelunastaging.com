@@ -49,6 +49,8 @@ jQuery(function($) {
             setTimeout(function() {
               $('html').removeClass('nav-open');
               $('nav').removeClass('active');
+              $('nav .jump-links').removeClass('active');
+            $('nav .my-info').removeClass('active');
             }, 750);
 
         } else {
@@ -56,6 +58,8 @@ jQuery(function($) {
 
             $('html').addClass('nav-open');
             $('nav').addClass('active');
+            $('nav .jump-links').addClass('active');
+            $('nav .my-info').addClass('active');
 
             setTimeout(function() {
                 $('.nav-container').addClass('active');
