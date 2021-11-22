@@ -297,7 +297,7 @@ nav .jump-links {
     display: flex;
     flex-direction: column;
     opacity: 0;
-    transition: var(--transition-speed-1);
+    transition-delay: 0.4s;
     visibility: hidden;
     width: 420px;
 }
