@@ -106,7 +106,6 @@ h5,
 .heading-5,
 h6,
 .heading-6 {
-    font-variant: small-caps;
     font-weight: 600;
     margin: 0;
 }
@@ -114,7 +113,6 @@ h6,
 h1,
 .heading-1 {
     font-size: calc(100rem / 16);
-    font-variant: none;
 }
 
 h2,
@@ -944,6 +942,7 @@ nav .my-info a:hover:before {
 
 .preview-description h3 {
     font-size: calc(14rem / 16);
+    font-variant: small-caps;
     font-weight: 500;
 }
 
