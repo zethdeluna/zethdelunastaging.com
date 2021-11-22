@@ -296,7 +296,15 @@ nav .jump-links {
     align-items: center;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transition: var(--transition-speed-1);
+    visibility: hidden;
     width: 420px;
+}
+
+nav .nav-container.active .jump-links {
+    opacity: 1;
+    visibility: visible;
 }
 
 nav .jump-links li {
