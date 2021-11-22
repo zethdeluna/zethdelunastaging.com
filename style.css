@@ -646,12 +646,12 @@ nav .my-info a:hover:before {
 
 .arrow-down span:nth-of-type(2) {
     animation: downArrow 4s ease infinite;
-    animation-delay: 2s;
+    animation-delay: 0.25s;
 }
 
 .arrow-down span:nth-of-type(3) {
     animation: downArrow 4s ease infinite;
-    animation-delay: 4s;
+    animation-delay: 0.5s;
 }
 
 /* .arrow-down {
