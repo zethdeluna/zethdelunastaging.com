@@ -252,38 +252,37 @@ nav .nav-container {
     width: 100%;
 }
 
-nav .nav-container .cover-top,
-nav .nav-container .cover-bottom {
+nav .nav-container:before,
+nav .nav-container:after {
     background: var(--off-white);
     content: '';
     display: block;
     height: 50%;
-    left: 50%;
+    left: 0;
     position: absolute;
-    transform: translate3d(-50%, 0, 0);
     transition: var(--transition-speed-2);
-    width: 420px;
+    width: 100%;
     z-index: 1;
 }
 
-nav .nav-container .cover-top {
+nav .nav-container:before {
     border-bottom: 4px solid var(--almost-black);
     top: 0;
 }
 
-nav .active.nav-container .cover-top {
-    left: calc(50% - 210px);
+nav .active.nav-container:before {
+    left: -210px;
     top: calc(-50% + 116px);
 }
 
-nav .nav-container .cover-bottom {
+nav .nav-container:after {
     border-top: 4px solid var(--almost-black);
     bottom: 0;
 }
 
-nav .active.nav-container .cover-bottom {
+nav .active.nav-container:after {
     bottom: calc(-50% + 116px);
-    left: calc(50% + 210px);
+    left: 210px;
 }
 
 nav ul {
