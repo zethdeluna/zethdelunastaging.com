@@ -1029,10 +1029,8 @@ nav .my-info a:hover:before {
 }
 
 @-webkit-keyframes downArrow {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 0; }
+    0% { top: -100%; }
+    100% { top: 100%; }
 }
 
 @keyframes topSkills {
