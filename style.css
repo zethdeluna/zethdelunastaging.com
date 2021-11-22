@@ -879,6 +879,14 @@ nav .my-info a:hover:before {
     width: 500px;
 }
 
+.preview-box .project-image {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 /***Preview Description***/
 
 .preview-description {

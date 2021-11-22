@@ -160,4 +160,29 @@ jQuery(function($) {
 
     })
 
+    /**********Projects**********/
+
+    function previewHover($project_number) {
+      let $project = $('#project-'+$project_number);
+      let $projectImage = $('#project-img-'+$project_number);
+
+      $project.on('mouseenter', function() {
+
+        $('.project-image').each(function() {
+          $(this).css('z-index', -1);
+        });
+
+        $projectImage.css('z-index', 1);
+
+      });
+
+    }
+
+    let project_numbers = [1, 2, 3, 4, 5, 6, 7];
+
+    $.each(project_numbers, function(index, value) {
+      let numStr = value.toString();
+      previewHover(numStr);
+    });
+
 });
