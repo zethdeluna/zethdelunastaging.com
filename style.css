@@ -430,18 +430,12 @@ nav .my-info a:hover:before {
 }
 
 .marquee span {
-    animation-duration: 120s;
-    animation-iteration-count: infinite;
-    animation-name: marqueeScroll;
-    animation-timing-function: linear;
+    animation: marqueeScroll 120s linear infinite;
     left: 100%;
     position: absolute;
     transform: rotate(90deg);
     transform-origin: top left;
-    -webkit-animation-duration: 120s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: marqueeScroll;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation: marqueeScroll 120s linear infinite;
     white-space: nowrap;
 }
 
@@ -645,7 +639,9 @@ nav .my-info a:hover:before {
 .arrow-down span:nth-of-type(2) {
     animation: downArrow 4s ease infinite;
     background: var(--off-white);
+    height: 40px;
     top: -100%;
+    -webkit-animation: downArrow 4s ease infinite;
 }
 
 /*********************************************************************************/
@@ -711,10 +707,7 @@ nav .my-info a:hover:before {
 
 .btn.open-skills,
 .btn.open-edu {
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-name: flicker;
-    animation-timing-function: linear;
+    animation: flicker 5s linear infinite;
     background: var(--dark-grayish-green);
     bottom: 0;
     font-weight: 400;
@@ -722,10 +715,7 @@ nav .my-info a:hover:before {
     left: 0;
     position: absolute;
     transition: var(--transition-speed-1);
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: flicker;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation: flicker 5s linear infinite;
     width: 100%;
     z-index: var(--z-4);
 }
@@ -783,29 +773,17 @@ nav .my-info a:hover:before {
 }
 
 .top-list {
-    animation-duration: 44s;
-    animation-iteration-count: infinite;
-    animation-name: topSkills;
-    animation-timing-function: linear;
+    animation: topSkills 44s linear infinite;
     left: 0;
     position: relative;
-    -webkit-animation-duration: 44s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: topSkills;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation: topSkills 44s linear infinite;
 }
 
 .bottom-list {
-    animation-duration: 44s;
-    animation-iteration-count: infinite;
-    animation-name: bottomSkills;
-    animation-timing-function: linear;
+    animation: bottomSkills 44s linear infinite;
     left: -400%;
     position: relative;
-    -webkit-animation-duration: 44s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: bottomSkills;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation: bottomSkills 44s linear infinite;
 }
 
 /***Education***/
