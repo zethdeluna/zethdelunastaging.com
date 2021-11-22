@@ -418,18 +418,12 @@ nav .my-info a:hover:before {
 }
 
 .marquee span {
-    animation-duration: 120s;
-    animation-iteration-count: infinite;
-    animation-name: marqueeScroll;
-    animation-timing-function: linear;
+    animation: marqueeScroll 120s linear infinite;
     left: 100%;
     position: absolute;
     transform: rotate(90deg);
     transform-origin: top left;
-    -webkit-animation-name: marqueeScroll;
-    -webkit-animation-duration: 120s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
+    -webkit-animation: marqueeScroll 120s linear infinite;
     white-space: nowrap;
 }
 
@@ -620,15 +614,9 @@ nav .my-info a:hover:before {
 }
 
 .arrow-down.active {
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-name: downArrow;
-    animation-timing-function: ease;
+    animation: downArrow 8s ease infinite;
     bottom: 40px;
-    -webkit-animation-duration: 8s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: downArrow;
-    -webkit-animation-timing-function: ease;
+    -webkit-animation: downArrow 8s ease infinite;
 }
 
 /*********************************************************************************/
@@ -694,10 +682,7 @@ nav .my-info a:hover:before {
 
 .btn.open-skills,
 .btn.open-edu {
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-name: flicker;
-    animation-timing-function: linear;
+    animation: 5s flicker linear infinite;
     background: var(--dark-grayish-green);
     bottom: 0;
     font-weight: 400;
@@ -705,10 +690,7 @@ nav .my-info a:hover:before {
     left: 0;
     position: absolute;
     transition: var(--transition-speed-1);
-    -webkit-animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: flicker;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation: 5s flicker linear infinite;
     width: 100%;
     z-index: var(--z-4);
 }
@@ -766,29 +748,17 @@ nav .my-info a:hover:before {
 }
 
 .top-list {
-    animation-duration: 44s;
-    animation-iteration-count: infinite;
-    animation-name: topSkills;
-    animation-timing-function: linear;
+    animation: topSkills 44s linear infinite;
     left: 0;
     position: relative;
-    -webkit-animation-duration: 44s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: topSkills;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation: topSkills 44s linear infinite;
 }
 
 .bottom-list {
-    animation-duration: 44s;
-    animation-iteration-count: infinite;
-    animation-name: bottomSkills;
-    animation-timing-function: linear;
+    animation: bottomSkills 44s linear infinite;
     left: -400%;
     position: relative;
-    -webkit-animation-duration: 44s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: bottomSkills;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation: bottomSkills 44s linear infinite;
 }
 
 /***Education***/
@@ -997,11 +967,11 @@ nav .my-info a:hover:before {
 /***Marquee***/
 
 @keyframes marqueeScroll {
-    to { top: 0; }
+    100% { top: 0; }
 }
 
 @-webkit-keyframes marqueeScroll {
-    to { top: 0; }
+    100% { top: 0; }
 }
 
 @keyframes downArrow {
@@ -1019,19 +989,19 @@ nav .my-info a:hover:before {
 }
 
 @keyframes topSkills {
-    to { left: -400%; }
+    100% { left: -400%; }
 }
 
 @-webkit-keyframes topSkills {
-    to { left: -400%; }
+    100% { left: -400%; }
 }
 
 @keyframes bottomSkills {
-    to { left: 0; }
+    100% { left: 0; }
 }
 
 @-webkit-keyframes bottomSkills {
-    to { left: 0; }
+    100% { left: 0; }
 }
 
 @keyframes flicker {
