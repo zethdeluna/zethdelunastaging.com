@@ -180,7 +180,7 @@ jQuery(function($) {
 
     let project_numbers = [1, 2, 3, 4, 5, 6, 7];
 
-    $.each(project_numbers, function(index, value) {
+    $.each(project_numbers.reverse(), function(index, value) {
       let numStr = value.toString();
       previewHover(numStr);
     });
