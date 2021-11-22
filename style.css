@@ -620,11 +620,7 @@ nav .my-info a:hover:before {
 }
 
 .arrow-down {
-    align-items: center;
     bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: 60px;
     left: calc(50% + (var(--container-padding-left) / 2));
     position: absolute;
@@ -633,50 +629,24 @@ nav .my-info a:hover:before {
 }
 
 .arrow-down span {
-    background: var(--almost-black);
-    height: 20px;
+    height: 60px;
     display: block;
-    position: relative;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translate3d(-50%, 0, 0);
     width: 2px;
 }
 
 .arrow-down span:nth-of-type(1) {
-    animation: downArrow 4s linear infinite;
+    background: var(--almost-black);
 }
 
 .arrow-down span:nth-of-type(2) {
-    animation: downArrow 4s linear infinite;
-    animation-delay: 0.25s;
+    animation: downArrow 4s ease infinite;
+    background: var(--off-white);
+    top: -100%;
 }
-
-.arrow-down span:nth-of-type(3) {
-    animation: downArrow 4s linear infinite;
-    animation-delay: 0.5s;
-}
-
-/* .arrow-down {
-    border-bottom: 2px solid var(--almost-black);
-    border-right: 2px solid var(--almost-black);
-    bottom: 60px;
-    height: 16px;
-    opacity: 0;
-    position: absolute;
-    transform: rotate(45deg);
-    transition: var(--transition-speed-2);
-    width: 16px;
-}
-
-.arrow-down.active {
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-name: downArrow;
-    animation-timing-function: ease;
-    bottom: 40px;
-    -webkit-animation-duration: 8s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-name: downArrow;
-    -webkit-animation-timing-function: ease;
-} */
 
 /*********************************************************************************/
 
@@ -1054,10 +1024,8 @@ nav .my-info a:hover:before {
 }
 
 @keyframes downArrow {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 0; }
+    0% { top: -100%; }
+    100% { top: 100%; }
 }
 
 @-webkit-keyframes downArrow {
