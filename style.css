@@ -334,8 +334,16 @@ nav .jump-links a:hover:before {
 nav .my-info {
     display: flex;
     justify-content: space-between;
+    opacity: 0;
     position: relative;
+    transition: var(--transition-speed-1);
+    visibility: hidden;
     width: 420px;
+}
+
+nav .nav-container.active .my-info {
+    opacity: 1;
+    visibility: visible;
 }
 
 nav .my-info:before {
