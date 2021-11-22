@@ -125,11 +125,6 @@ h3,
     font-size: calc(50rem / 16);
 }
 
-p,
-a {
-    font-variant: small-caps;
-}
-
 .small {
     font-size: calc(12rem / 16);
 }
