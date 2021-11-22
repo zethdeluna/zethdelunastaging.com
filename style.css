@@ -131,6 +131,11 @@ button {
     text-transform: uppercase;
 }
 
+.p-font {
+    font-size: calc(16rem / 16);
+    font-weight: 400;
+}
+
 .btn {
     background: transparent;
     border: none;
@@ -867,7 +872,12 @@ nav .my-info a:hover:before {
     letter-spacing: -4px;
     line-height: 1;
     text-align: left;
+    transition: all 0.25s ease;
     width: 100%;
+}
+
+.btn.project:hover {
+    color: var(--dark-grayish-green);
 }
 
 /***Preview Box***/
@@ -879,26 +889,48 @@ nav .my-info a:hover:before {
     width: 500px;
 }
 
-.preview-box .project-image {
+.preview-box .preview-image {
     height: 100%;
     left: 0;
     opacity: 0;
     position: absolute;
     top: 0;
     transition: all 0.25s ease;
+    visibility: hidden;
     width: 100%;
 }
 
-.project-image.active {
+.preview-image.active {
     opacity: 1;
+    visibility: visible;
 }
 
 /***Preview Description***/
 
-.preview-description {
+.preview-description-container {
     height: 500px;
     margin-right: 20px;
+    position: relative;
     width: 200px;
+}
+
+.preview-description {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.25s ease;
+    visibility: hidden;
+    width: 100%;
+}
+
+.preview-description.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 /*********************************************************************************/

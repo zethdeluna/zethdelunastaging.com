@@ -164,15 +164,20 @@ jQuery(function($) {
 
     function previewHover($project_number) {
       let $project = $('#project-'+$project_number);
-      let $projectImage = $('#project-img-'+$project_number);
+      let $previewImage = $('#preview-img-'+$project_number);
+      let $previewDescription = $('#preview-descr-'+$project_number);
 
       $project.on('mouseenter', function() {
 
-        $('.project-image').each(function() {
+        $('.preview-image').each(function() {
+          $(this).removeClass('active');
+        });
+        $('.preview-description').each(function() {
           $(this).removeClass('active');
         });
 
-        $projectImage.addClass('active');
+        $previewImage.addClass('active');
+        $previewDescription.addClass('active');
 
       });
 
@@ -180,7 +185,7 @@ jQuery(function($) {
 
     let project_numbers = [1, 2, 3, 4, 5, 6, 7];
 
-    $.each(project_numbers.reverse(), function(index, value) {
+    $.each(project_numbers, function(index, value) {
       let numStr = value.toString();
       previewHover(numStr);
     });
