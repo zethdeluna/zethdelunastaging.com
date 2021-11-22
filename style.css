@@ -620,36 +620,36 @@ nav .my-info a:hover:before {
 }
 
 .arrow-down {
-    bottom: 60px;
+    align-items: center;
+    bottom: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 7px;
-    height: 20px;
-    left: 50%;
+    height: 60px;
+    left: calc(50% + (var(--container-padding-left) / 2));
     position: absolute;
     transform: translate3d(-50%, 0, 0);
-    width: 20px;
+    width: 2px;
 }
 
 .arrow-down span {
     background: var(--almost-black);
-    height: 10px;
+    height: 20px;
     display: block;
     position: relative;
     width: 2px;
 }
 
 .arrow-down span:nth-of-type(1) {
-    top: 0;
+
 }
 
 .arrow-down span:nth-of-type(2) {
-    top: 50%;
-    transform: translate3d(0, -50%, 0);
+
 }
 
 .arrow-down span:nth-of-type(3) {
-    top: 0;
+
 }
 
 /* .arrow-down {
