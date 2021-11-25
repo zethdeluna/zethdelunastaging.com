@@ -187,13 +187,6 @@ jQuery(function($) {
 
     }
 
-    let project_numbers = [1, 2, 3, 4, 5, 6, 7];
-
-    $.each(project_numbers, function(index, value) {
-      let numStr = value.toString();
-      previewHover(numStr);
-    });
-
     // Project Details
 
     function openProjectDetails($project_number) {
@@ -215,7 +208,16 @@ jQuery(function($) {
         e.stopImmediatePropagation();
 
         $projectDetail.toggleClass('active');
-      })
+      });
+
     }
+
+    let project_numbers = [1, 2, 3, 4, 5, 6, 7];
+
+    $.each(project_numbers, function(index, value) {
+      let numStr = value.toString();
+      previewHover(numStr);
+      openProjectDetails(numStr);
+    });
 
 });
