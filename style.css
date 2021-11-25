@@ -1035,7 +1035,7 @@ nav .my-info a:hover:before {
     align-items: center;
     background: var(--off-white);
     border-left: 2px solid var(--almost-black);
-    border-radius: 2px solid var(--almost-black);
+    border-right: 2px solid var(--almost-black);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1045,6 +1045,7 @@ nav .my-info a:hover:before {
     transform: translate3d(-50%, 0, 0);
     transition: all 0.25s ease;
     width: 0;
+    z-index: inherit;
 }
 
 .project-detail .content.active {
