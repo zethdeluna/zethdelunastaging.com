@@ -192,15 +192,22 @@ jQuery(function($) {
     function openProjectDetails($project_number) {
       let $projectButton = $('#project-btn-'+$project_number);
       let $projectDetail = $('#project-detail-'+$project_number);
-      let $projectBackground = $('#project-detail-'+$project_number+'.project-detail.background');
+      let $projectBackground = $('#project-detail-'+$project_number+' .background');
 
       $projectButton.on('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
         e.stopImmediatePropagation();
 
-        if ($projectDetail.hasClass('active')) $projectDetail.removeClass('active');
-        else $projectDetail.addClass('active');
+        if ($projectDetail.hasClass('active')) { 
+          $projectDetail.removeClass('active');
+          $projectBackground.removeClass('active');
+        }
+        else { 
+          $projectDetail.addClass('active');
+          $projectBackground.addClass('active');
+        }
+        
       });
 
       $projectBackground.on('click', function(e) {
@@ -208,8 +215,15 @@ jQuery(function($) {
         e.stopPropagation();
         e.stopImmediatePropagation();
 
-        if ($projectDetail.hasClass('active')) $projectDetail.removeClass('active');
-        else $projectDetail.addClass('active');
+        if ($projectDetail.hasClass('active')) { 
+          $projectDetail.removeClass('active');
+          $projectBackground.removeClass('active');
+        }
+        else { 
+          $projectDetail.addClass('active');
+          $projectBackground.addClass('active');
+        }
+
       });
 
     }
