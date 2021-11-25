@@ -167,11 +167,11 @@ jQuery(function($) {
     /**********Projects**********/
 
     function previewHover($project_number) {
-      let $project = $('#project-'+$project_number);
+      let $projectButton = $('#project-btn-'+$project_number);
       let $previewImage = $('#preview-img-'+$project_number);
       let $previewDescription = $('#preview-descr-'+$project_number);
 
-      $project.on('mouseenter', function() {
+      $projectButton.on('mouseenter', function() {
 
         $('.preview-image').each(function() {
           $(this).removeClass('active');
@@ -193,5 +193,29 @@ jQuery(function($) {
       let numStr = value.toString();
       previewHover(numStr);
     });
+
+    // Project Details
+
+    function openProjectDetails($project_number) {
+      let $projectButton = $('#project-btn-'+$project_number);
+      let $projectDetail = $('#project-detail-'+$project_number);
+      let $projectBackground = $('#project-detail-'+$project_number+'.project-detail:before');
+
+      $projectButton.on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+
+        $projectDetail.toggleClass('active');
+      });
+
+      $projectBackground.on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+
+        $projectDetail.toggleClass('active');
+      })
+    }
 
 });
