@@ -59,6 +59,7 @@
     --container-padding-left: 60px;
     --transition-speed-1: all 0.25s ease;
     --transition-speed-2: all 0.5s ease;
+    --z-negative: -1;
     --z-1: 1;
     --z-2: 2;
     --z-3: 3;
@@ -987,6 +988,25 @@ nav .my-info a:hover:before {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
+}
+
+/***Project Detail***/
+
+.project-detail {
+    height: 100vw;
+    position: relative;
+    width: 100vw;
+}
+
+.project-detail:before {
+    background: var(--dark-grayish-green);
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-negative);
 }
 
 /*********************************************************************************/
