@@ -1024,7 +1024,7 @@ nav .my-info a:hover:before {
     z-index: inherit;
 }
 
-.project-detail.background.active {
+.project-detail .background.active {
     opacity: 0.5;
     visibility: visible;
 }
