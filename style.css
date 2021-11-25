@@ -995,7 +995,7 @@ nav .my-info a:hover:before {
 /***Project Detail***/
 
 .project-detail {
-    height: 100vw;
+    height: 100vh;
     left: 0;
     opacity: 0;
     position: absolute;
@@ -1011,9 +1011,8 @@ nav .my-info a:hover:before {
     z-index: var(--z-5);
 }
 
-.project-detail:before {
+.project-detail .background {
     background: var(--dark-grayish-green);
-    content: '';
     height: 100%;
     left: 0;
     opacity: 0;
@@ -1025,7 +1024,7 @@ nav .my-info a:hover:before {
     z-index: inherit;
 }
 
-.active.project-detail:before {
+.project-detail.background.active {
     opacity: 0.5;
     visibility: visible;
 }

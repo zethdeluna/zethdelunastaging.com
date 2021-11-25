@@ -192,7 +192,7 @@ jQuery(function($) {
     function openProjectDetails($project_number) {
       let $projectButton = $('#project-btn-'+$project_number);
       let $projectDetail = $('#project-detail-'+$project_number);
-      let $projectBackground = $('#project-detail-'+$project_number+'.project-detail:before');
+      let $projectBackground = $('#project-detail-'+$project_number+'.project-detail.background');
 
       $projectButton.on('click', function(e) {
         e.preventDefault();
