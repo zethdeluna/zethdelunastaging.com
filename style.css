@@ -866,6 +866,7 @@ nav .my-info a:hover:before {
 /***Projects List***/
 
 .projects-list {
+    background: green;
     border-bottom: 2px solid var(--almost-black);
     border-top: 2px solid var(--almost-black);
     height: 500px;
