@@ -1000,6 +1000,7 @@ nav .my-info a:hover:before {
 
 .project-detail:before {
     background: var(--dark-grayish-green);
+    content: '';
     height: 100%;
     left: 0;
     opacity: 0.5;
