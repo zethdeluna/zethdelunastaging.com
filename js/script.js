@@ -199,7 +199,8 @@ jQuery(function($) {
         e.stopPropagation();
         e.stopImmediatePropagation();
 
-        $projectDetail.toggleClass('active');
+        if ($projectDetail.hasClass('active')) $projectDetail.removeClass('active');
+        else $projectDetail.addClass('active');
       });
 
       $projectBackground.on('click', function(e) {
@@ -207,7 +208,8 @@ jQuery(function($) {
         e.stopPropagation();
         e.stopImmediatePropagation();
 
-        $projectDetail.toggleClass('active');
+        if ($projectDetail.hasClass('active')) $projectDetail.removeClass('active');
+        else $projectDetail.addClass('active');
       });
 
     }
