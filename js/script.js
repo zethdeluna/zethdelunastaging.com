@@ -190,24 +190,35 @@ jQuery(function($) {
     // Project Details
 
     function openProjectDetails($project_number) {
+      let $projectSelector = '#project-detail-'+$project_number;
       let $projectButton = $('#project-btn-'+$project_number);
-      let $projectDetail = $('#project-detail-'+$project_number);
-      let $projectBackground = $('#project-detail-'+$project_number+' .background');
+      let $projectDetail = $($projectSelector);
+      let $projectBackground = $($projectSelector+' .background');
+      let $projectContentContainer = $($projectSelector+' .content');
 
       $projectButton.on('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
         e.stopImmediatePropagation();
 
-        if ($projectDetail.hasClass('active')) { 
-          $projectDetail.removeClass('active');
-          $projectBackground.removeClass('active');
+        if ($projectDetail.hasClass('active')) {
+          $projectContentContainer.removeClass('active');
+
+          setTimeout(function() {
+            $projectDetail.removeClass('active');
+            $projectBackground.removeClass('active');
+          }, 250);
+
         }
         else { 
           $projectDetail.addClass('active');
           $projectBackground.addClass('active');
+
+          setTimeout(function() {
+            $projectContentContainer.addClass('active');
+          }, 250);
         }
-        
+
       });
 
       $projectBackground.on('click', function(e) {
@@ -215,13 +226,22 @@ jQuery(function($) {
         e.stopPropagation();
         e.stopImmediatePropagation();
 
-        if ($projectDetail.hasClass('active')) { 
-          $projectDetail.removeClass('active');
-          $projectBackground.removeClass('active');
+        if ($projectDetail.hasClass('active')) {
+          $projectContentContainer.removeClass('active');
+
+          setTimeout(function() {
+            $projectDetail.removeClass('active');
+            $projectBackground.removeClass('active');
+          }, 250);
+          
         }
         else { 
           $projectDetail.addClass('active');
           $projectBackground.addClass('active');
+
+          setTimeout(function() {
+            $projectContentContainer.addClass('active');
+          }, 250);
         }
 
       });
