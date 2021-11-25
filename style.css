@@ -871,8 +871,14 @@ nav .my-info a:hover:before {
     height: 500px;
     margin-left: 20px;
     min-width: 200px;
+    -ms-overflow-style: none;
     overflow-y: scroll;
+    scrollbar-width: none;
     width: 200px;
+}
+
+.projects-list::-webkit-scrollbar {
+    display: none;
 }
 
 .projects-list:before {
