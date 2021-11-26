@@ -1042,15 +1042,14 @@ nav .my-info a:hover:before {
     left: 50%;
     position: absolute;
     top: 0;
-    transform: scaleX(0) translate3d(-50%, 0, 0);
-    transform-origin: center;
+    transform: translate3d(-50%, 0, 0);
     transition: var(--transition-speed-2);
-    width: 720px;
+    width: 0;
     z-index: inherit;
 }
 
 .project-detail .content.active {
-    transform: scaleX(1) translate3d(-50%, 0, 0);
+    width: 720px;
 }
 
 .project-detail .content .date {
