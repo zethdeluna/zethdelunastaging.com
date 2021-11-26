@@ -1054,9 +1054,17 @@ nav .my-info a:hover:before {
 
 .project-detail .content .date {
     font-weight: 300;
+    opacity: 0;
     position: absolute;
     right: 30px;
     top: 40px;
+    transition: var(--transition-speed-1);
+    visibility: hidden;
+}
+
+.project-detail .content .date.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .project-detail .content h2 {
@@ -1082,10 +1090,12 @@ nav .my-info a:hover:before {
 .project-detail .content h2 span {
     opacity: 0;
     transition: var(--transition-speed-1);
+    visibility: hidden;
 }
 
 .project-detail .content h2 span.active {
     opacity: 1;
+    visibility: visible;
 }
 
 /*********************************************************************************/

@@ -197,6 +197,7 @@ jQuery(function($) {
       let $container = $($selector+' .content');
       let $header = $($selector+' h2');
       let $headerSpan = $($selector+' h2 span');
+      let $date = $($selector+' .date');
 
       function projectClick(e) {
         e.preventDefault();
@@ -205,6 +206,7 @@ jQuery(function($) {
 
         if ($project.hasClass('active')) {
           $headerSpan.removeClass('active');
+          $date.removeClass('active');
 
           setTimeout(function() {
             $header.removeClass('active');
@@ -234,6 +236,7 @@ jQuery(function($) {
 
           setTimeout(function() {
             $headerSpan.addClass('active');
+            $date.addClass('active');
           }, 1250);
 
         }
