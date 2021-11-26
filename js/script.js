@@ -17,16 +17,16 @@ jQuery(function($) {
 
     // Fade Up
 
-    $('.project-detail .content').on('scroll', _.throttle(function() {
-      let $windowBottom = $(window).scrollTop() + $(window).innerHeight();
+    // $('.project-detail .content').on('scroll', _.throttle(function() {
+    //   let $windowBottom = $(window).scrollTop() + $(window).innerHeight();
       
-      $('.fade-up').each(function() {
-        let $elementPos = $(this).offset().top;
-        if ($elementPos < $windowBottom) $(this).addClass('active');
-        else $(this).removeClass('active');
-      })
+    //   $('.fade-up').each(function() {
+    //     let $elementPos = $(this).offset().top;
+    //     if ($elementPos < $windowBottom) $(this).addClass('active');
+    //     else $(this).removeClass('active');
+    //   })
 
-    }, 100));
+    // }, 100));
 
     /**********Menu Button**********/
 
