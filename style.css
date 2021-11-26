@@ -31,6 +31,12 @@
 @font-face {
     font-display: swap;
     font-family: 'Work Sans';
+    font-weight: 600;
+    src: url(fonts/WorkSans-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Work Sans';
     font-weight: 700;
     src: url(fonts/WorkSans-Bold.ttf);
 }
@@ -57,6 +63,7 @@
     --container-max-width: 1600px;
     --container-margin: calc((100vw - var(--container-width)) / 2);
     --container-padding-left: 60px;
+    --project-content-width: calc(100% - 60px);
     --transition-speed-1: all 0.25s ease;
     --transition-speed-2: all 0.5s ease;
     --z-negative: -1;
@@ -126,6 +133,7 @@ h2,
 h3,
 .heading-3 {
     font-size: calc(50rem / 16);
+    line-height: calc(40 / 50);
 }
 
 .small {
@@ -1080,14 +1088,13 @@ nav .my-info a:hover:before {
     display: flex;
     font-weight: 400;
     letter-spacing: -2px;
-    line-height: calc(40 / 50);
     margin: 60px auto 0;
     padding: 15px 0;
     position: relative;
     transform: scaleX(0);
     transform-origin: center;
     transition: var(--transition-speed-2);
-    width: calc(100% - 60px);
+    width: var(--project-content-width);
 }
 
 .project-detail .content h2.active {
@@ -1109,12 +1116,12 @@ nav .my-info a:hover:before {
 
 .project-detail .content p.subheading {
     border-bottom: 1px solid var(--almost-black);
-    margin: 0;
+    margin: 0 0 30px;
     padding: 15px 0;
     transform: scaleX(0);
     transform-origin: center;
     transition: var(--transition-speed-2);
-    width: calc(100% - 60px);
+    width: var(--project-content-width);
 }
 
 .project-detail .content p.subheading.active {
@@ -1123,11 +1130,11 @@ nav .my-info a:hover:before {
 
 .project-detail .content .project-hero {
     height: auto;
+    margin: 0 0 30px;
     opacity: 0;
-    padding: 30px 0 0;
     transition: var(--transition-speed-2);
     visibility: hidden;
-    width: calc(100% - 60px);
+    width: var(--project-content-width);
 }
 
 .project-detail .content .project-hero.active {
@@ -1139,15 +1146,16 @@ nav .my-info a:hover:before {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    width: var(--project-content-width);
 }
 
 .project-detail .content .callout p.heading-3 {
     font-style: italic;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .project-detail .content .callout a {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /*********************************************************************************/
