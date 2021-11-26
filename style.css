@@ -999,7 +999,7 @@ nav .my-info a:hover:before {
     left: 0;
     opacity: 0;
     position: absolute;
-    transition: all 0.25s ease;
+    transition: var(--transition-speed-1);
     visibility: hidden;
     width: 100vw;
     z-index: var(--z-negative);
@@ -1018,7 +1018,7 @@ nav .my-info a:hover:before {
     opacity: 0;
     position: absolute;
     top: 0;
-    transition: all 0.25s ease;
+    transition: var(--transition-speed-1);
     visibility: hidden;
     width: 100%;
     z-index: inherit;
@@ -1029,7 +1029,7 @@ nav .my-info a:hover:before {
     visibility: visible;
 }
 
-/*Content Container*/
+/*Content*/
 
 .project-detail .content {
     align-items: center;
@@ -1043,13 +1043,39 @@ nav .my-info a:hover:before {
     position: absolute;
     top: 0;
     transform: translate3d(-50%, 0, 0);
-    transition: all 0.25s ease;
+    transition: var(--transition-speed-1);
     width: 0;
     z-index: inherit;
 }
 
 .project-detail .content.active {
     width: 720px;
+}
+
+.project-detail .content h2 {
+    border-bottom: 2px solid var(--almost-black);
+    border-top: 2px solid var(--almost-black);
+    display: flex;
+    margin: 20px;
+    padding: 20px 0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: var(--transition-speed-1);
+    width: 100%;
+}
+
+.project-detail .content h2.active {
+    transform: scaleX(1);
+}
+
+.project-detail .content h2 span {
+    opacity: 0;
+    transition: var(--transition-speed-1);
+}
+
+.project-detail .content h2 span.active {
+    opacity: 1;
 }
 
 /*********************************************************************************/

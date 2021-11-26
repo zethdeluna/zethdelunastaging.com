@@ -167,11 +167,11 @@ jQuery(function($) {
     /**********Projects**********/
 
     function previewHover($project_number) {
-      let $projectButton = $('#project-btn-'+$project_number);
+      let $button = $('#project-btn-'+$project_number);
       let $previewImage = $('#preview-img-'+$project_number);
       let $previewDescription = $('#preview-descr-'+$project_number);
 
-      $projectButton.on('mouseenter', function() {
+      $button.on('mouseenter', function() {
 
         $('.preview-image').each(function() {
           $(this).removeClass('active');
@@ -189,62 +189,58 @@ jQuery(function($) {
 
     // Project Details
 
-    function openProjectDetails($project_number) {
-      let $projectSelector = '#project-detail-'+$project_number;
-      let $projectButton = $('#project-btn-'+$project_number);
-      let $projectDetail = $($projectSelector);
-      let $projectBackground = $($projectSelector+' .background');
-      let $projectContentContainer = $($projectSelector+' .content');
+    function openProject($project_number) {
+      let $selector = '#project-detail-'+$project_number;
+      let $button = $('#project-btn-'+$project_number);
+      let $project = $($selector);
+      let $background = $($selector+' .background');
+      let $container = $($selector+' .content');
+      let $header = $($selector+' h2');
+      let $headerSpan = $($selector+' h2 span');
 
-      $projectButton.on('click', function(e) {
+      function projectClick(e) {
         e.preventDefault();
         e.stopPropagation();
         e.stopImmediatePropagation();
 
-        if ($projectDetail.hasClass('active')) {
-          $projectContentContainer.removeClass('active');
+        if ($project.hasClass('active')) {
+          $headerSpan.removeClass('active');
 
           setTimeout(function() {
-            $projectDetail.removeClass('active');
-            $projectBackground.removeClass('active');
+            $header.removeClass('active');
           }, 250);
-
-        }
-        else { 
-          $projectDetail.addClass('active');
-          $projectBackground.addClass('active');
 
           setTimeout(function() {
-            $projectContentContainer.addClass('active');
-          }, 250);
-        }
-
-      });
-
-      $projectBackground.on('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        e.stopImmediatePropagation();
-
-        if ($projectDetail.hasClass('active')) {
-          $projectContentContainer.removeClass('active');
+            $container.removeClass('active');
+          }, 500);
 
           setTimeout(function() {
-            $projectDetail.removeClass('active');
-            $projectBackground.removeClass('active');
-          }, 250);
+            $project.removeClass('active');
+            $background.removeClass('active');
+          }, 750);
           
         }
         else { 
-          $projectDetail.addClass('active');
-          $projectBackground.addClass('active');
+          $project.addClass('active');
+          $background.addClass('active');
 
           setTimeout(function() {
-            $projectContentContainer.addClass('active');
+            $container.addClass('active');
           }, 250);
-        }
 
-      });
+          setTimeout(function() {
+            $header.addClass('active');
+          }, 500);
+
+          setTimeout(function() {
+            $headerSpan.addClass('active');
+          }, 750);
+
+        }
+      }
+
+      $button.on('click', projectClick());
+      $background.on('click', projectClick());
 
     }
 
@@ -253,7 +249,7 @@ jQuery(function($) {
     $.each(project_numbers, function(index, value) {
       let numStr = value.toString();
       previewHover(numStr);
-      openProjectDetails(numStr);
+      openProject(numStr);
     });
 
 });
