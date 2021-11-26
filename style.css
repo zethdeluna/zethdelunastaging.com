@@ -31,6 +31,7 @@
 @font-face {
     font-display: swap;
     font-family: 'Work Sans';
+    font-style: italic;
     font-weight: 600;
     src: url(fonts/WorkSans-SemiBoldItalic.ttf);
 }
@@ -116,7 +117,6 @@ h5,
 .heading-5,
 h6,
 .heading-6 {
-    font-style: normal;
     font-weight: 600;
     margin: 0;
 }
