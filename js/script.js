@@ -199,6 +199,7 @@ jQuery(function($) {
       let $date = $($selector+' .date');
       let $headingSpan = $($selector+' h2 span');
       let $subheading = $($selector+' p.subheading');
+      let $subheadingSpan = $($selector+' p.subheading span');
 
       function projectClick(e) {
         e.preventDefault();
@@ -208,10 +209,11 @@ jQuery(function($) {
         if ($project.hasClass('active')) {
           $date.removeClass('active');
           $headingSpan.removeClass('active');
-          $subheading.removeClass('active');
+          $subheadingSpan.removeClass('active');
 
           setTimeout(function() {
             $heading.removeClass('active');
+            $subheading.removeClass('active');
           }, 500);
 
           setTimeout(function() {
@@ -234,12 +236,13 @@ jQuery(function($) {
 
           setTimeout(function() {
             $heading.addClass('active');
+            $subheading.addClass('active');
           }, 750);
 
           setTimeout(function() {
             $date.addClass('active');
             $headingSpan.addClass('active');
-            $subheading.addClass('active');
+            $subheadingSpan.addClass('active');
           }, 1250);
 
         }

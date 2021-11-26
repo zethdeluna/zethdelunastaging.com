@@ -1087,30 +1087,31 @@ nav .my-info a:hover:before {
     transform: scaleX(1);
 }
 
-.project-detail .content h2 span {
+.project-detail .content h2 span,
+.project-detail .content p.subheading span {
     opacity: 0;
     transition: var(--transition-speed-2);
     visibility: hidden;
 }
 
-.project-detail .content h2 span.active {
+.project-detail .content h2 span.active,
+.project-detail .content p.subheading span.active {
     opacity: 1;
     visibility: visible;
 }
 
 .project-detail .content p.subheading {
     border-bottom: 1px solid var(--almost-black);
-    opacity: 0;
     margin: 0;
     padding: 15px 0;
+    transform: scaleX(0);
+    transform-origin: center;
     transition: var(--transition-speed-2);
-    visibility: hidden;
     width: calc(100% - 60px);
 }
 
 .project-detail .content p.subheading.active {
-    opacity: 1;
-    visibility: visible;
+    transform: scaleX(1);
 }
 
 /*********************************************************************************/
