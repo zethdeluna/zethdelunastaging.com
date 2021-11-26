@@ -214,25 +214,20 @@ jQuery(function($) {
         e.stopImmediatePropagation();
 
         if ($project.hasClass('active')) {
-          $date.removeClass('active');
-          $headingSpan.removeClass('active');
-          $subheadingSpan.removeClass('active');
-          $hero.removeClass('active');
-          $fadeUpElement.each(function() { $(this).removeClass('active'); });
+
+          $container.removeClass('active');
 
           setTimeout(function() {
+            $date.removeClass('active');
             $heading.removeClass('active');
+            $headingSpan.removeClass('active');
             $subheading.removeClass('active');
-          }, 500);
-
-          setTimeout(function() {
-            $container.removeClass('active');
-          }, 1000)
-
-          setTimeout(function() {
+            $subheadingSpan.removeClass('active');
+            $hero.removeClass('active');
+            $fadeUpElement.each(function() { $(this).removeClass('active'); });
             $project.removeClass('active');
             $background.removeClass('active');
-          }, 1500);
+          }, 500);
           
         }
         else { 
