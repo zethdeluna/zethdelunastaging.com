@@ -1041,6 +1041,19 @@ nav .my-info a:hover:before {
 
 /*Content*/
 
+.fade-up {
+    opacity: 0;
+    transform: translate3d(0, 15px, 0);
+    transition: var(--transition-speed-2);
+    visibility: hidden;
+}
+
+.fade-up.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+}
+
 .project-detail .content {
     align-items: center;
     background: var(--off-white);

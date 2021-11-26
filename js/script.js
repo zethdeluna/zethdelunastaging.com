@@ -34,6 +34,18 @@ jQuery(function($) {
     //     }).scroll(); //invoke scroll-handler on page-load
     //   });
 
+    // Fade Up
+
+    $(window).on('scroll', function() {
+      let $windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      
+      $('.fade-up').each(function() {
+        let $elementPos = $(this).offset().top;
+        if ($elementPos < $windowBottom) $(this).addClass('active');
+        else $(this).removeClass('active');
+      })
+    })
+
     /**********Menu Button**********/
 
     $('#menu-btn').on('click', function(e) {
