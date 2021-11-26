@@ -206,6 +206,7 @@ jQuery(function($) {
       let $subheading = $($selector+' p.subheading');
       let $subheadingSpan = $($selector+' p.subheading span');
       let $hero = $($selector+' .project-hero');
+      let $fadeUpElement = $($selector+' .fade-up');
 
       function projectClick(e) {
         e.preventDefault();
@@ -217,6 +218,7 @@ jQuery(function($) {
           $headingSpan.removeClass('active');
           $subheadingSpan.removeClass('active');
           $hero.removeClass('active');
+          $fadeUpElement.each(function() { $(this).removeClass('active'); });
 
           setTimeout(function() {
             $heading.removeClass('active');
