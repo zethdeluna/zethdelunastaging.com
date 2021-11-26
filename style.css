@@ -118,6 +118,7 @@ h5,
 h6,
 .heading-6 {
     font-weight: 600;
+    letter-spacing: -2px;
     margin: 0;
 }
 
@@ -1152,7 +1153,6 @@ nav .my-info a:hover:before {
 
 .project-detail .content .callout p.heading-3 {
     font-style: italic;
-    font-weight: 600;
 }
 
 .project-detail .content .callout a {
