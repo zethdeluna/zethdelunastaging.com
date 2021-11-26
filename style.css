@@ -1051,7 +1051,6 @@ nav .my-info a:hover:before {
     transform: translate3d(0, 15px, 0);
     transition: var(--transition-speed-2);
     visibility: hidden;
-    will-change: opacity, transform, visibility;
 }
 
 .fade-up.active {
