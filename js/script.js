@@ -17,7 +17,7 @@ jQuery(function($) {
 
     // Fade Up
 
-    $('.project-detail .content').scroll( _.throttle(function() {
+    $('.project-detail .content').on('scroll', _.throttle(function() {
       let $windowBottom = $(window).scrollTop() + $(window).innerHeight();
       
       $('.fade-up').each(function() {
