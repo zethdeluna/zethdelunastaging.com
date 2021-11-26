@@ -226,15 +226,18 @@ jQuery(function($) {
           $hero.removeClass('active');
 
           setTimeout(function() {
-            $container.removeClass('active');
             $heading.removeClass('active');
             $subheading.removeClass('active');
           }, 500);
 
           setTimeout(function() {
+            $container.removeClass('active');
+          }, 750)
+
+          setTimeout(function() {
             $project.removeClass('active');
             $background.removeClass('active');
-          }, 1000);
+          }, 1250);
           
         }
         else { 
