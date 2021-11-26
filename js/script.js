@@ -239,8 +239,8 @@ jQuery(function($) {
         }
       }
 
-      $button.on('click', projectClick());
-      $background.on('click', projectClick());
+      $button.on('click', projectClick);
+      $background.on('click', projectClick);
 
     }
 
