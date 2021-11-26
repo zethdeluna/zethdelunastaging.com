@@ -212,12 +212,12 @@ jQuery(function($) {
 
           setTimeout(function() {
             $container.removeClass('active');
-          }, 500);
+          }, 750);
 
           setTimeout(function() {
             $project.removeClass('active');
             $background.removeClass('active');
-          }, 750);
+          }, 1250);
           
         }
         else { 
@@ -230,11 +230,11 @@ jQuery(function($) {
 
           setTimeout(function() {
             $header.addClass('active');
-          }, 500);
+          }, 750);
 
           setTimeout(function() {
             $headerSpan.addClass('active');
-          }, 750);
+          }, 1250);
 
         }
       }

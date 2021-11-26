@@ -1043,7 +1043,7 @@ nav .my-info a:hover:before {
     position: absolute;
     top: 0;
     transform: translate3d(-50%, 0, 0);
-    transition: var(--transition-speed-1);
+    transition: var(--transition-speed-2);
     width: 0;
     z-index: inherit;
 }
@@ -1061,7 +1061,7 @@ nav .my-info a:hover:before {
     position: relative;
     transform: scaleX(0);
     transform-origin: center;
-    transition: var(--transition-speed-1);
+    transition: var(--transition-speed-2);
     width: 100%;
 }
 
