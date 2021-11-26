@@ -216,15 +216,15 @@ jQuery(function($) {
         if ($project.hasClass('active')) {
 
           $container.removeClass('active');
-
-          setTimeout(function() {
-            $date.removeClass('active');
+          $date.removeClass('active');
             $heading.removeClass('active');
             $headingSpan.removeClass('active');
             $subheading.removeClass('active');
             $subheadingSpan.removeClass('active');
             $hero.removeClass('active');
             $fadeUpElement.each(function() { $(this).removeClass('active'); });
+
+          setTimeout(function() {
             $project.removeClass('active');
             $background.removeClass('active');
           }, 500);
