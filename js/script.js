@@ -217,14 +217,16 @@ jQuery(function($) {
 
           $container.removeClass('active');
           $date.removeClass('active');
-            $heading.removeClass('active');
-            $headingSpan.removeClass('active');
-            $subheading.removeClass('active');
-            $subheadingSpan.removeClass('active');
-            $hero.removeClass('active');
-            $fadeUpElement.each(function() { $(this).removeClass('active'); });
+          
+          $headingSpan.removeClass('active');
+          
+          $subheadingSpan.removeClass('active');
+          $hero.removeClass('active');
+          $fadeUpElement.each(function() { $(this).removeClass('active'); });
 
           setTimeout(function() {
+            $heading.removeClass('active');
+            $subheading.removeClass('active');
             $project.removeClass('active');
             $background.removeClass('active');
           }, 500);
