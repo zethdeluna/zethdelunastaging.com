@@ -1150,7 +1150,7 @@ nav .my-info a:hover:before {
 
 .project-detail .content .project-hero {
     height: auto;
-    margin: 0 0 30px;
+    margin: 0 0 60px;
     opacity: 0;
     transition: var(--transition-speed-2);
     visibility: hidden;
@@ -1166,7 +1166,7 @@ nav .my-info a:hover:before {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 0 0 30px;
+    margin: 0 0 60px;
     width: var(--project-content-width);
 }
 
@@ -1183,10 +1183,15 @@ nav .my-info a:hover:before {
     flex-direction: column;
     gap: 15px;
     margin: 0 0 30px;
+    width: var(--project-content-width);
 }
 
 .project-detail .content .intro h3 {
     font-weight: 500;
+}
+
+.project-detail .content .intro p {
+    margin: 0;
 }
 
 /*********************************************************************************/
