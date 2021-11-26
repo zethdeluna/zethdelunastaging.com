@@ -1114,6 +1114,20 @@ nav .my-info a:hover:before {
     transform: scaleX(1);
 }
 
+.project-detail .content .project-hero {
+    height: auto;
+    opacity: 0;
+    padding: 60px 0 0;
+    transition: var(--transition-speed-2);
+    visibility: hidden;
+    width: calc(100% - 60px);
+}
+
+.project-detail .content .project-hero.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 /*********************************************************************************/
 
 /*KEYFRAMES*/

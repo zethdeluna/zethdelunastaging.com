@@ -200,6 +200,7 @@ jQuery(function($) {
       let $headingSpan = $($selector+' h2 span');
       let $subheading = $($selector+' p.subheading');
       let $subheadingSpan = $($selector+' p.subheading span');
+      let $hero = $($selector+' .project-hero');
 
       function projectClick(e) {
         e.preventDefault();
@@ -210,6 +211,7 @@ jQuery(function($) {
           $date.removeClass('active');
           $headingSpan.removeClass('active');
           $subheadingSpan.removeClass('active');
+          $hero.removeClass('active');
 
           setTimeout(function() {
             $heading.removeClass('active');
@@ -243,6 +245,7 @@ jQuery(function($) {
             $date.addClass('active');
             $headingSpan.addClass('active');
             $subheadingSpan.addClass('active');
+            $hero.addClass('active');
           }, 1250);
 
         }
