@@ -17,16 +17,27 @@ jQuery(function($) {
 
     // Fade Up
 
-    // $('.project-detail .content').on('scroll', _.throttle(function() {
-    //   let $windowBottom = $(window).scrollTop() + $(window).innerHeight();
-      
-    //   $('.fade-up').each(function() {
-    //     let $elementPos = $(this).offset().top;
-    //     if ($elementPos < $windowBottom) $(this).addClass('active');
-    //     else $(this).removeClass('active');
-    //   })
+    var didScroll = false;
 
-    // }, 100));
+    $('.project-detail .content').on('scroll', function() {
+      didScroll = true;
+      let $windowBottom = $(window).scrollTop() + $(window).innerHeight();
+      
+      $('.fade-up').each(function() {
+        let $elementPos = $(this).offset().top;
+        if ($elementPos < $windowBottom) $(this).addClass('active');
+        else $(this).removeClass('active');
+      })
+
+    });
+
+    setInterval(function() {
+      if ( didScroll ) {
+          didScroll = false;
+          // Check your page position and then
+          // Load in more results
+      }
+  }, 250);
 
     /**********Menu Button**********/
 
