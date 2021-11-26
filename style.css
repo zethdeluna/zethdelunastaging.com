@@ -1040,13 +1040,19 @@ nav .my-info a:hover:before {
     flex-direction: column;
     height: 100%;
     left: 50%;
+    -ms-overflow-style: none;
     overflow: auto;
     position: absolute;
+    scrollbar-width: none;
     top: 0;
     transform: translate3d(-50%, 0, 0);
     transition: width 0.5s ease;
     width: 0;
     z-index: inherit;
+}
+
+.project-detail .content::-webkit-scrollbar {
+    display: none;
 }
 
 .project-detail .content.active {
@@ -1118,7 +1124,7 @@ nav .my-info a:hover:before {
 .project-detail .content .project-hero {
     height: auto;
     opacity: 0;
-    padding: 60px 0 0;
+    padding: 30px 0 0;
     transition: var(--transition-speed-2);
     visibility: hidden;
     width: calc(100% - 60px);
@@ -1127,6 +1133,21 @@ nav .my-info a:hover:before {
 .project-detail .content .project-hero.active {
     opacity: 1;
     visibility: visible;
+}
+
+.project-detail .content .callout {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-detail .content .callout p.heading-3 {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.project-detail .content .callout a {
+    font-weight: 300;
 }
 
 /*********************************************************************************/
