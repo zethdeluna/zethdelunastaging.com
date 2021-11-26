@@ -17,7 +17,7 @@ jQuery(function($) {
 
     // Fade Up
 
-    $('.project-detail .content').scroll( $.throttle(100, function() {
+    $('.project-detail .content').scroll( $.throttle(function() {
       let $windowBottom = $(window).scrollTop() + $(window).innerHeight();
       
       $('.fade-up').each(function() {
@@ -26,7 +26,7 @@ jQuery(function($) {
         else $(this).removeClass('active');
       })
 
-    }));
+    }, 100));
 
     /**********Menu Button**********/
 
