@@ -1058,7 +1058,7 @@ nav .my-info a:hover:before {
     position: absolute;
     right: 30px;
     top: 45px;
-    transition: var(--transition-speed-1);
+    transition: var(--transition-speed-2);
     visibility: hidden;
 }
 
@@ -1089,7 +1089,7 @@ nav .my-info a:hover:before {
 
 .project-detail .content h2 span {
     opacity: 0;
-    transition: var(--transition-speed-1);
+    transition: var(--transition-speed-2);
     visibility: hidden;
 }
 
@@ -1101,9 +1101,11 @@ nav .my-info a:hover:before {
 .project-detail .content p.subheading {
     border-bottom: 1px solid var(--almost-black);
     opacity: 0;
+    margin: 0;
     padding: 15px 0;
-    transition: var(--transition-speed-1);
+    transition: var(--transition-speed-2);
     visibility: hidden;
+    width: calc(100% - 60px);
 }
 
 .project-detail .content p.subheading.active {
