@@ -195,9 +195,10 @@ jQuery(function($) {
       let $project = $($selector);
       let $background = $($selector+' .background');
       let $container = $($selector+' .content');
-      let $header = $($selector+' h2');
-      let $headerSpan = $($selector+' h2 span');
+      let $heading = $($selector+' h2');
       let $date = $($selector+' .date');
+      let $headingSpan = $($selector+' h2 span');
+      let $subheading = $($selector+' p.subheading');
 
       function projectClick(e) {
         e.preventDefault();
@@ -205,11 +206,12 @@ jQuery(function($) {
         e.stopImmediatePropagation();
 
         if ($project.hasClass('active')) {
-          $headerSpan.removeClass('active');
           $date.removeClass('active');
+          $headingSpan.removeClass('active');
+          $subheading.removeClass('active');
 
           setTimeout(function() {
-            $header.removeClass('active');
+            $heading.removeClass('active');
           }, 250);
 
           setTimeout(function() {
@@ -231,12 +233,13 @@ jQuery(function($) {
           }, 250);
 
           setTimeout(function() {
-            $header.addClass('active');
+            $heading.addClass('active');
           }, 750);
 
           setTimeout(function() {
-            $headerSpan.addClass('active');
             $date.addClass('active');
+            $headingSpan.addClass('active');
+            $subheading.addClass('active');
           }, 1250);
 
         }
