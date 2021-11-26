@@ -1123,9 +1123,11 @@ nav .my-info a:hover:before {
 
 .project-detail .content h2 span,
 .project-detail .content p.subheading span {
+    display: flex;
     opacity: 0;
     transition: var(--transition-speed-2);
     visibility: hidden;
+    width: var(--project-content-width);
 }
 
 .project-detail .content h2 span.active,

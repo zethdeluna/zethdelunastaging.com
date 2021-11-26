@@ -217,9 +217,7 @@ jQuery(function($) {
 
           $container.removeClass('active');
           $date.removeClass('active');
-          
           $headingSpan.removeClass('active');
-          
           $subheadingSpan.removeClass('active');
           $hero.removeClass('active');
           $fadeUpElement.each(function() { $(this).removeClass('active'); });
