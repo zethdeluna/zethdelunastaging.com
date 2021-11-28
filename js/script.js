@@ -224,10 +224,13 @@ jQuery(function($) {
           setTimeout(function() {
             $background.removeClass('active');
             $container.removeClass('active');
+          }, 500);
+
+          setTimeout(function() {
             $heading.removeClass('active');
             $project.removeClass('active');
             $subheading.removeClass('active');
-          }, 500);
+          }, 1000)
           
         }
         else {
