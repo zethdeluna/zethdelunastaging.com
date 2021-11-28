@@ -32,7 +32,6 @@ jQuery(function($) {
     var didScroll = false;
 
     $('.project-detail .content').on('scroll', scrollFade);
-    $('.project-detail .content').on('load', scrollFade);
 
     setInterval(function() {
       if ( didScroll ) {
@@ -251,6 +250,7 @@ jQuery(function($) {
 
           setTimeout(function() {
             $date.addClass('active');
+            $fadeUpElement.each(function() { $(this).addClass('active'); });
             $headingSpan.addClass('active');
             $hero.addClass('active');
             $subheadingSpan.addClass('active');
