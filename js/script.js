@@ -215,24 +215,24 @@ jQuery(function($) {
 
         if ($project.hasClass('active')) {
 
-          $container.removeClass('active');
           $date.removeClass('active');
-          $headingSpan.removeClass('active');
-          $subheadingSpan.removeClass('active');
-          $hero.removeClass('active');
           $fadeUpElement.each(function() { $(this).removeClass('active'); });
+          $headingSpan.removeClass('active');
+          $hero.removeClass('active');
+          $subheadingSpan.removeClass('active');
 
           setTimeout(function() {
-            $heading.removeClass('active');
-            $subheading.removeClass('active');
-            $project.removeClass('active');
             $background.removeClass('active');
+            $container.removeClass('active');
+            $heading.removeClass('active');
+            $project.removeClass('active');
+            $subheading.removeClass('active');
           }, 500);
           
         }
-        else { 
-          $project.addClass('active');
+        else {
           $background.addClass('active');
+          $project.addClass('active');
 
           setTimeout(function() {
             $container.addClass('active');
@@ -246,8 +246,8 @@ jQuery(function($) {
           setTimeout(function() {
             $date.addClass('active');
             $headingSpan.addClass('active');
-            $subheadingSpan.addClass('active');
             $hero.addClass('active');
+            $subheadingSpan.addClass('active');
           }, 1250);
 
         }
