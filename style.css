@@ -1201,7 +1201,7 @@ nav .my-info a:hover:before {
     margin: 0 0 30px;
 }
 
-.project-detail .content .intro .screenshot {
+.project-detail .content .screenshot {
     border-bottom: 30px solid var(--almost-black);
     border-top: 30px solid var(--almost-black);
     height: auto;
