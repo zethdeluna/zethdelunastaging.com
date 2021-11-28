@@ -1198,10 +1198,10 @@ nav .my-info a:hover:before {
 }
 
 .project-detail .content .intro p {
-    margin: 0 0 60px;
+    margin: 0 0 30px;
 }
 
-.project-detail .content .intro img {
+.project-detail .content .intro .screenshot {
     border-bottom: 30px solid var(--almost-black);
     border-top: 30px solid var(--almost-black);
     height: auto;
