@@ -17,9 +17,7 @@ jQuery(function($) {
 
     // Fade Up
 
-    var didScroll = false;
-
-    $('.project-detail .content').on('scroll', function() {
+    function scrollFade() {
       didScroll = true;
       let $windowBottom = $(window).scrollTop() + $(window).innerHeight();
       
@@ -27,9 +25,14 @@ jQuery(function($) {
         let $elementPos = $(this).offset().top;
         if ($elementPos < $windowBottom) $(this).addClass('active');
         else $(this).removeClass('active');
-      })
+      });
 
-    });
+    }
+
+    var didScroll = false;
+
+    $('.project-detail .content').on('scroll', scrollFade);
+    $('.project-detail .content').on('load', scrollFade);
 
     setInterval(function() {
       if ( didScroll ) {
@@ -37,7 +40,7 @@ jQuery(function($) {
           // Check your page position and then
           // Load in more results
       }
-  }, 250);
+    }, 250);
 
     /**********Menu Button**********/
 
