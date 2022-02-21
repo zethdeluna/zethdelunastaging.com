@@ -73,29 +73,7 @@ jQuery(function($) {
             }, 500);
         }
 
-    })
-
-    /**********Marquees**********/
-
-    function build_marquee($section, $text) {
-        /** $section should be selector as string
-            $text should be a marquee text as string
-        */
-
-        const $whitespaces = '&nbsp;'.repeat(4);
-        $text = $text+$whitespaces;
-        let $marquee = $section+' .marquee span';
-
-        $($marquee).html($text.repeat(80));
-
-        let $height = $(window).height() * 10;
-        let $startPosition = ( $(window).height() * 2 ) - $height;
-        $($marquee).css('top', $startPosition);
-    }
-
-    build_marquee('.hero', 'Front-end Developer');
-    build_marquee('.about-me', 'About Me');
-    build_marquee('.projects', 'Projects')
+    });
 
     /**********Skills & Education Marquees**********/
 
